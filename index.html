@@ -1,0 +1,201 @@
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+
+		<link rel="stylesheet" href="style.css">
+
+
+	</head>
+
+<body>
+
+
+
+
+
+<div class="navbar">
+
+			<span class="open-slide">
+						<a href="#" onclick="openSlideMenu()">
+
+							 <svg width="30" height="30">
+
+							 	<path d="M0,2 30,2" stroke="white" stroke-width="4"/>
+							 	<path d="M0,11 30,11" stroke="white" stroke-width="4"/>
+							 	<path d="M0,20 30,20" stroke="white" stroke-width="4"/>
+
+							 </svg>
+						</a>
+			</span>
+
+			 <a class="lien" href="#home">Maison</a>
+
+
+			  <div class="dropdown">
+
+			    <button class="dropbtn">Photos</button>
+
+			    <div class="dropdown-content">
+
+			      <a href="#">Oiseaux</a>
+			      <a href="#">Nature</a>
+			      <a href="#">Animaux</a>
+			      <a href="#">Saison</a>
+			    </div>
+
+			 </div>
+</div>
+
+<div id="side-menu" class="side-nav">
+
+				<a href="#"> <h1> Marina Germain </h1></a>
+
+				<a class="icon" href="https://www.facebook.com"><img src="icons/facebook.svg"></a>
+				<a class="icon" href="https://www.youtube.com"><img src="icons/youtube.svg"></a>
+				<a class="icon" href="https://www.instagram.com"><img src="icons/instagram.svg"></a>
+				<a class="icon" href="https://www.pinterest.com"><img src="icons/pinterest.png"></a>
+
+				<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+				<a href="#">Maison</a>
+				<a href="#">Photos</a>
+
+
+
+			<br>
+			<video width="250" height="auto" controls>
+
+	  			<source src="video.mp4" type="video/mp4">
+
+			</video>
+
+		</div>
+
+
+		<div id="main">
+
+
+			
+
+
+
+
+		</div>
+
+
+
+<div class="grid">
+
+	<div class="header">
+
+		<img src="header.jpg">
+	</div>
+
+
+</div>
+
+
+<div class="grid2">
+		
+	<div class="content1">
+
+	<img src="image/fleur1.jpg">
+
+	</div>
+
+	<div class="content2">
+
+	<img src="image/fleur2.jpg">
+
+	</div>
+
+	<div class="content3">
+
+	<img src="image/fleur3.jpg">
+
+	</div>
+
+	<div class="content4">
+
+	<img src="image/oiseau1.jpg">
+
+	</div>
+
+	<div class="content5">
+
+	<img src="image/oiseau2.jpg">
+
+	</div>
+
+	<div class="content6">
+
+	<img src="image/oiseau3.jpg">
+
+	</div>
+
+	<div class="content7">
+
+	<img src="image/animal1.jpg">
+
+	</div>
+
+	<div class="content8">
+
+	<img src="image/animal2.jpg">
+
+	</div>
+
+	<div class="content9">
+
+	<img src="image/animal3.jpg">
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<footer>
+
+	<div class="footer">
+
+		 <img src="logo.svg">
+
+
+	</div>
+
+</footer>
+
+
+	<script>
+						// side MENU
+						function openSlideMenu(){
+							document.getElementById("side-menu").style.width = "250px";
+							document.getElementById("main").style.display = "none";
+						}
+						function closeSlideMenu(){
+							document.getElementById("side-menu").style.width = "0";
+							document.getElementById("main").style.display		= "initial";
+
+						}
+
+
+
+
+
+
+
+	</script>
+
+	</body>
+
+
+</html>
