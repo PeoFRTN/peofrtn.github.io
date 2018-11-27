@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>FRTN - UniChimie</title>
+
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html"><i class="fa fa-connectdevelop"></i>&nbsp;&nbsp;Chimie</a>
+    <a href="mecanisme.html"><i class="fa fa-gears"></i>&nbsp;&nbsp;Mécanisme</a>
+    <a href="reactions.html"><i class="fa fa-flask"></i>&nbsp;&nbsp;Réactions</a>
+    <a href="prog.html"><i class="fa fa-code"></i>&nbsp;&nbsp;Programmation</a>
+  </div>
+</div>
+
+
+
+	
+
+	<div class="nav">
+		<div class="menu">
+			<a onclick="openNav()" href="#"><i class="fa fa-bars"></i></a>
+				
+		</div>
+		<div class="menu">
+			<a href="#"><i id="contact" class="fa fa-paper-plane-o"></i></a>
+		</div>
+		
+		<ul>
+			<li onclick="openSearchMenu()"><a  href="#"><i class="fa fa-search"></i></a></li>
+			<li class="dropdown" onmouseover="setVisibility('subnav', 'inline');" onmouseout="setVisibility('subnav','none');"><a class="navlink" href="index.html" ><i class="fa fa-connectdevelop"></i>&nbsp;&nbsp;Chimie&nbsp;<i  id="down" class="fa fa-caret-down"></i></a>
+			</li>
+			<li class="dropdown" onmouseover="setVisibility('subnav-2', 'inline');" onmouseout="setVisibility('subnav-2','none');"><a class="navlink" href="mecanisme.html" ><i class="fa fa-gears"></i>&nbsp;&nbsp;Mécanisme&nbsp;<i id="down" class="fa fa-caret-down"></i></li>
+
+			<li><a class="navlink" href="reactions.html"><i class="fa fa-flask"></i>&nbsp;&nbsp;Réactions</a></li>
+			<li><a class="navlink" href="prog.html"><i class="fa fa-code"></i>&nbsp;&nbsp;Programmation</a></li>
+			
+
+		</ul>
+	</div>
+
+			<div id="subnav">
+			<li onMouseOver="setVisibility('subnav', 'inline');" onMouseOut="setVisibility('subnav','none');"><a class="navlink" href="#">[&nbsp;&nbsp;Organique&nbsp;&nbsp;]</a></li>
+			<li onMouseOver="setVisibility('subnav', 'inline');" onMouseOut="setVisibility('subnav','none');"><a class="navlink" href="#">[&nbsp;&nbsp;Inorganique&nbsp;&nbsp;]</a></li>
+			<li onMouseOver="setVisibility('subnav', 'inline');" onMouseOut="setVisibility('subnav','none');"><a class="navlink" href="#">[&nbsp;&nbsp;Analytique&nbsp;&nbsp;]</a></li>
+			<li onMouseOver="setVisibility('subnav', 'inline');" onMouseOut="setVisibility('subnav','none');"><a class="navlink" href="#">[&nbsp;&nbsp;Physique&nbsp;&nbsp;]</a></li>
+			<li onMouseOver="setVisibility('subnav', 'inline');" onMouseOut="setVisibility('subnav','none');"><a class="navlink" href="#">[&nbsp;&nbsp;Laboratoire&nbsp;&nbsp;]</a></li>
+			<li onMouseOver="setVisibility('subnav', 'inline');" onMouseOut="setVisibility('subnav','none');"><a class="navlink" href="#">[&nbsp;&nbsp;Biologique&nbsp;&nbsp;]</a></li>
+			</div>
+
+			<div id="subnav-2">
+			<li onMouseOver="setVisibility('subnav-2', 'inline');" onMouseOut="setVisibility('subnav-2','none');"><a class="navlink" href="#">[&nbsp;&nbsp;Noms&nbsp;&nbsp;]</a></li>
+			<li onMouseOver="setVisibility('subnav-2', 'inline');" onMouseOut="setVisibility('subnav-2','none');"><a class="navlink" href="#">[&nbsp;&nbsp;Rétrosynthèse&nbsp;&nbsp;]</a></li>
+			<li onMouseOver="setVisibility('subnav-2', 'inline');" onMouseOut="setVisibility('subnav-2','none');"><a class="navlink" href="#">[&nbsp;&nbsp;Lectures&nbsp;&nbsp;]</a></li>
+			<li onMouseOver="setVisibility('subnav-2', 'inline');" onMouseOut="setVisibility('subnav-2','none');"><a class="navlink" href="#">[&nbsp;&nbsp;Outils&nbsp;&nbsp;]</a></li>
+			<li onMouseOver="setVisibility('subnav-2', 'inline');" onMouseOut="setVisibility('subnav-2','none');"><a class="navlink" href="#">[&nbsp;&nbsp;Types&nbsp;&nbsp;]</a></li>
+			<li onMouseOver="setVisibility('subnav-2', 'inline');" onMouseOut="setVisibility('subnav-2','none');"><a class="navlink" href="#">[&nbsp;&nbsp;Synthèse&nbsp;&nbsp;]</a></li>
+			</div>
+
+
+
+
+			<div id="search" >
+			<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+
+				<ul id="myMenu">
+				  <li><a href="#">Grignard</a></li>
+				  <li><a href="#">Suzuki</a></li>
+				  <li><a href="#">Diels-Alder</a></li>
+				  <li><a href="#">Baeyer-Villiger</a></li>
+				  <li><a href="#">Hofmann</a></li>
+				  <li><a href="#">Curtius</a></li>
+		
+
+				</ul>
+				<div class="closeBtn">
+				<a onclick="closeSearchMenu()"  href="#"><i class="fa fa-close"></i></a>
+			</div>
+			</div>
+
+	<div class="main">
+		
+			<div class="content-1">
+				
+				<div class="grid1">
+					
+					<div class="grid1Left">
+						
+					</div>
+					<div class="grid1Mid">
+						
+						<div class="logo">
+						<img src="logo.png">
+						</div>
+
+						<div class="logoText">
+
+							<h1>La chimie dans un cadre universitaire</h1>
+						</div>
+						<div class="button-container">
+							<a href="#" class="button">Que souhaitez-vous découvrir?</a>
+						</div>
+
+					</div>
+					<div class="grid1Right">
+						
+					</div>
+				</div>
+				
+				
+					<div class="grid2">
+					
+					<div class="item">
+						<a href="#"><p>organique</p></a>
+					</div>
+					<div class="item">
+						<a href="#"><p>inorganique</p></a>
+					</div>
+					<div class="item">
+						<a href="#"><p>analytique</p></a>
+					</div>
+					<div class="item">
+						<a href="#"><p>physique</p></a>
+					</div>
+					<div class="item">
+						<a href="#"><p>laboratoire</p></a>
+					</div>
+					<div class="item">
+						<a href="#"><p>biologique</p></a>
+					</div>
+
+
+					
+					</div>
+
+
+				
+
+			</div>
+
+
+			<div class="footer">
+				<div class="card">
+					<img src="molecule.png">
+ 				 <h1>Pierre-Olivier Fortin</h1>
+ 				 <p class="title">Chemistry / Development</p>
+ 				 <p>Université de Montreal</p>
+ 				 <div style="margin: 24px 0;">
+ 				   <a href="#"><i class="fa fa-github"></i></a> 
+  					  <a href="#"><i class="fa fa-twitter"></i></a>  
+  						  <a href="#"><i class="fa fa-linkedin"></i></a>  
+  							  <a href="#"><i class="fa fa-facebook"></i></a> 
+ 				</div>
+ 				<p><button>Contact</button></p>
+				</div>
+				
+			</div>
+			
+
+
+
+
+	</div>		
+
+
+
+<script>
+
+	function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+function setVisibility(id, visibility) {
+document.getElementById(id).style.display = visibility;
+}
+
+function openSearchMenu(){
+      document.getElementById("search").style.width = "100%";
+      document.getElementById("search").style.height = "100%";
+    }
+function closeSearchMenu(){
+      document.getElementById("search").style.width = "0";
+      document.getElementById("search").style.height = "0";
+    }
+function myFunction() {
+
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+</body>
+</html>
