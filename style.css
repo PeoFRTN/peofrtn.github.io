@@ -150,7 +150,7 @@
 	background-color: #e0f2f1; 
 	top: 0;
 	background-image: url(lurm.jpg);
-	background-position: center;
+	background-position: fixed;
 	background-repeat: no;
 	background-size: cover;
 
