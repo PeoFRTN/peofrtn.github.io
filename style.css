@@ -408,6 +408,13 @@ button:hover, a:hover {
 	.grid2 {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
-	
-}
+	}
+	.logoText h1 {
+	font-size: 1.20em;
+	}
+	.button-container a{
+	font-size: 14px;
+	}
+
+
 }
