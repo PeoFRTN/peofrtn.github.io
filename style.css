@@ -50,7 +50,9 @@
 .menu i {
 	color: #ffffff;
 }
-
+#bigLogo {
+	font-size: 900%;
+}
 #contact {
 	font-size: 80%;
 	margin-left: 10px;
@@ -158,6 +160,8 @@
 }
 
 .grid1 {
+	
+
 	top: 0;
 	display: grid;
 	grid-template-columns: 1fr 16fr 1fr;
@@ -189,9 +193,9 @@
 	grid-row-gap: 1em;
 }
 .item {
-	background-color: #1E254A;
-	color: #ffffff;
-	border: 2px solid #ffffff;
+	background-color: #99A5E0;;
+	
+	border: 6px solid #ffffff;
 
 	padding: 10px 15px 10px 15px;
 	vertical-align: middle;
@@ -202,10 +206,19 @@
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	
 }
+.item:hover {
+	opacity: 0.9;
+	transition: 0.5s;
+	
+}
+.item a:hover {
+	
+}
 .item a {
 	text-decoration: none;
 	list-style: none;
-	color: #ffffff;
+	color: #1E254A;
+	font-size: 18px;
 	
 }
 .logoText {
