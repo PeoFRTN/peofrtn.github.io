@@ -182,9 +182,9 @@
 }
 .grid1Mid {
 	margin-top: 100px;
-	height: 50vh;
+	height: 350px;
 	background-color: #ffffff;
-	min-height: 325px;
+	
 }
 
 .grid1Mid img {
@@ -432,9 +432,10 @@ button:hover, a:hover {
 	}
 	.grid1 {
 	grid-template-columns: 0 auto 0;
+	margin-top: -35px;
 	}
 	.grid1Mid {
-		min-height: 325px;
+		height: 300px;
 	}
 	.grid2 {
 	grid-template-columns: 1fr 1fr;
@@ -444,6 +445,7 @@ button:hover, a:hover {
 		margin-top: -15px;
 	font-size: 1.20em;
 	}
+
 	.button-container a{
 		margin-top: -15px;
 		font-size: 14px;
