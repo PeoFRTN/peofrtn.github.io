@@ -453,8 +453,19 @@ button:hover, a:hover {
 	}
 	.logo {
 		transform: scale(0.7);
+	
+	}
 
-}
+	.item,
+	.item a{
+		padding: 0;
+		text-align: center;
+		min-width: 180px;
+		min-height: 80px;
+		line-height: 80px;
+		
+	}
+
 
 
 }
