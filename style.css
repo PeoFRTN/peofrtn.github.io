@@ -2,6 +2,14 @@
 	padding: 0;
 	margin: 0;
 	font-family: 'Karla', sans-serif;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+	 -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .bar {
@@ -176,6 +184,7 @@
 	margin-top: 100px;
 	height: 50vh;
 	background-color: #ffffff;
+	min-height: 325px;
 }
 
 .grid1Mid img {
@@ -190,34 +199,38 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	grid-row-gap: 1em;
+	grid-row-gap: 4em;
+
 }
 .item {
-	background-color: #99A5E0;;
-	
-	border: 6px solid #ffffff;
-
-	padding: 10px 15px 10px 15px;
-	vertical-align: middle;
-	line-height: 50px;
-	margin: 0 auto;
-	width: 150px;
-	height: 50px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #1E254A;
+    opacity: 1;
+    border: solid 1px #fff;
+    color: #fff;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.item p{
+	
 	
 }
-.item:hover {
-	opacity: 0.9;
-	transition: 0.5s;
-	
-}
-.item a:hover {
-	
+.item p:hover {
+	opacity: 0.8;
+	transition: 0.3s;
 }
 .item a {
+	text-align: center;
+	vertical-align: middle;
+	margin: 0 auto;
 	text-decoration: none;
 	list-style: none;
-	color: #1E254A;
+	color: #ffffff;
 	font-size: 18px;
 	
 }
@@ -245,7 +258,7 @@
 }
 
 .card img {
-	margin
+	margin: 0 auto;
 	height: 64px;
 	width: 64px;
 }
@@ -284,6 +297,7 @@
 	box-shadow: 0 4px 2px -2px gray;
 
 }
+
 
 .button:hover {
     opacity: 0.7;
@@ -419,6 +433,9 @@ button:hover, a:hover {
 	.grid1 {
 	grid-template-columns: 0 auto 0;
 	}
+	.grid1Mid {
+		min-height: 325px;
+	}
 	.grid2 {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
@@ -429,8 +446,13 @@ button:hover, a:hover {
 	}
 	.button-container a{
 		margin-top: -15px;
-	font-size: 14px;
+		font-size: 14px;
+		bottom: 0;
 	}
+	.logo {
+		transform: scale(0.7);
+
+}
 
 
 }
