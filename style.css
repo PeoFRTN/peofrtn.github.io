@@ -124,6 +124,7 @@
     left: 0;
     background-color: #D6FFF6;
     overflow: hidden;
+    overflow-y: scroll;
     transition: 0.8s;
 }
 
@@ -157,7 +158,7 @@
 	background-color: #FF8484;
 	color: #D6FFF6;
 	margin: 0 0 0 25px;
-	max-height: 100px;
+	height: 100px;
 	line-height: 100px;
 	-webkit-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
@@ -168,7 +169,7 @@
 	background-color: #4DCCBD;
 	color: #1E254A;
 	margin: 0 25px 0 25px;
-	max-height: 100px;
+	height: 100px;
 	line-height: 100px;
 	-webkit-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
@@ -179,7 +180,7 @@
 	background-color: #1E254A;
 	color: #4DCCBD;
 	margin: 0 25px 0 0;
-	max-height: 100px;
+	height: 100px;
 	line-height: 100px;
 	-webkit-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
@@ -503,25 +504,43 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 
 /* MEDIAS QUERIES */
 @media only screen and (max-width: 700px)  {
-	.menu {
-	display: inline-block;
-	margin-left: 10px;
-	margin-top: 10px;
-	height: 60px;
-	width: 70px;
-	float: left;
-	}
 	.grid-rabbit {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 150vh;
+	grid-template-columns: 1fr 1fr 1fr 0.915fr 1fr 1fr 1fr;
+	grid-template-rows: 100vh;
 	height: 90vh;
 	overflow: hidden;
 	width: 100vw;
 	grid-column-gap: 2vw;
 	}
-
-	
+	.grid-maze {
+		width: 100vw;
+		grid-template-columns: 1fr 1fr 1fr 0.915fr 1fr 1fr 1fr;
+	}
+	.maze-42 i,
+	 .maze-52 i,
+	 .maze-62 i,
+	 .maze-63 i,
+	 .maze-64 i,
+	 .maze-54 i,
+	 .maze-34 i,
+	 .maze-44 i,
+	 .maze-24 i,
+	 .maze-25 i,
+	 .maze-26 i,
+	 .maze-36 i,
+	 .maze-46 i,
+	 .maze-56 i,
+	 .maze-66 i,
+	 .maze-41 i,
+	 .maze-12 i,
+	 .maze-22 i {
+	 	color: #1E254A;
+	 	text-align: center;
+	 	vertical-align: middle;
+	 	line-height: 14.28vw;
+	 	font-size: 25px;
+	 }
 
 }
 
@@ -546,7 +565,8 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	z-index: 0;
 	position: relative;
 	grid-template-rows: 14.28vw 14.28vw 14.28vw 14.28vw 14.28vw 14.28vw 14.28vw;
-	grid-template-columns: 14.28vw 14.28vw 15.60vw auto 15.60vw 14.28vw 14.28vw;
+	grid-template-columns: 1fr 1fr 1fr 0.8fr 1fr 1fr 1fr;
+
 
 
 }
@@ -554,7 +574,8 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	.maze-11 {
 	grid-area: "11";
 	background-color: #1E254A;
-	margin-left: 0; }
+	margin-left: 0;
+	 }
 	.maze-21 {
 	grid-area: "21";
 	background-color: #1E254A; }
@@ -573,7 +594,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	 .overlap-51 {
 		position: absolute;
 		background-color: #1E254A;
-		border-radius: 0 0 0 50px;
+		border-radius: 0 0 0 25px;
 		z-index: 2;
 		width: 100%;
 		height: 100%;
@@ -588,18 +609,18 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 
 	.maze-12 {
 	grid-area: "12";
-	background-color: #D6FFF6; }
+	background-color: #1E254A; }
 	.maze-22 {
 	grid-area: "22";
 	background-color: #D6FFF6;
-	border-radius: 0 50px 50px 0; }
+	border-radius: 100% 0 100% 100%; }
 	.maze-32 {
 	grid-area: "32";
 	background-color: #1E254A; }
 	.maze-42 {
 	grid-area: "42";
 	background-color: #D6FFF6;
-	border-radius: 0 0 0 50px ;
+	border-radius: 0 0 0 25px ;
 	 }
 	 .maze-42,
 	 .maze-52,
@@ -617,13 +638,12 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	 .maze-56,
 	 .maze-66,
 	 .maze-41,
-	 .maze-12,
 	 .maze-22  {
 	 	color: #1E254A;
 	 	text-align: center;
 	 	vertical-align: middle;
 	 	line-height: 14.28vw;
-	 	font-size: 25px;
+	 	font-size: 35px;
 	 }
 	.maze-52 {
 	grid-area: "52";
@@ -632,7 +652,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	.maze-62 {
 	grid-area: "62";
 	background-color: #D6FFF6;
-	border-radius: 0 50px 0 0 ; }
+	border-radius: 0 25px 0 0 ; }
 	.maze-72 {
 	grid-area: "72";
 	background-color: #1E254A; }
@@ -659,7 +679,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	.overlap-53 {
 		position: absolute;
 		background-color: #1E254A;;
-		border-radius: 0 50px 50px 0;
+		border-radius: 0 25px 25px 0;
 		z-index: 2;
 		width: 100%;
 		height: 100%;
@@ -679,7 +699,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	.maze-24 {
 	grid-area: "24";
 	background-color: #D6FFF6;
-	border-radius: 50px 0 0 0 ;
+	border-radius: 25px 0 0 0 ;
 	  }
 	.maze-34 {
 	grid-area: "34";
@@ -695,7 +715,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	.maze-64 {
 	grid-area: "64";
 	background-color: #D6FFF6;
-	border-radius: 0 0 50px 0 ; }
+	border-radius: 0 0 25px 0 ; }
 	.maze-74 {
 	grid-area: "74";
 	background-color: #1E254A; }
@@ -714,7 +734,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	.overlap-35 {
 		position: absolute;
 		background-color: #1E254A;
-		border-radius: 50px 0 0 50px;
+		border-radius: 25px 0 0 25px;
 		z-index: 2;
 		width: 100%;
 		height: 100%;
@@ -738,7 +758,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	.maze-26 {
 	grid-area: "26";
 	background-color: #D6FFF6;
-	border-radius: 0 0 0 50px ; }
+	border-radius: 0 0 0 25px ; }
 	.maze-36 {
 	grid-area: "36";
 	background-color: #D6FFF6;
@@ -752,7 +772,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	.maze-66 {
 	grid-area: "66";
 	background-color: #D6FFF6;
-	border-radius: 0 50px 50px 0 ; }
+	border-radius: 0 25px 25px 0 ; }
 	.maze-76 {
 	grid-area: "76";
 	background-color: #1E254A; }

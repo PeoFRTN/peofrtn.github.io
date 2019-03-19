@@ -23,9 +23,9 @@
 
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-angle-double-left"></i></a>
   <div class="overlay-content">
-    <div class="overlay-item-1"><a href="index.html"><i class="fas fa-male"></i>&nbsp;&nbsp;&nbsp;ABOUT</a></div>
-    <div class="overlay-item-2"><a href="index.html"><i class="fas fa-book"></i>&nbsp;&nbsp;&nbsp;PROJECTS</a></div>
-    <div class="overlay-item-3"><a href="index.html"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;CONTACT</a></div>
+    <div class="overlay-item-1"><a href="#"><i class="fas fa-male"></i>&nbsp;&nbsp;&nbsp;ABOUT</a></div>
+    <div class="overlay-item-2"><a href="#""><i class="fas fa-book"></i>&nbsp;&nbsp;&nbsp;PROJECTS</a></div>
+    <div class="overlay-item-3"><a href="#"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;CONTACT</a></div>
   </div>
 </div>
 
@@ -157,7 +157,7 @@
 		<div class="maze-61"></div>
 		<div class="maze-71"></div>
 			<div class="maze-12">
-				<i class="fas fa-chevron-circle-right"></i>
+				
 			</div>
 		<div class="maze-22">
 			<i class="fas fa-chevron-circle-right"></i>
@@ -280,21 +280,21 @@ document.getElementById(id).style.display = visibility;
 
 <script>
 	    $('.grid-rabbit-item-1').on('click',function(){
-        $(this).closest('.grid-rabbit').css('grid-template-columns', '10fr 1fr 1fr 1fr 1fr 1fr 1fr');
+        $(this).closest('.grid-rabbit').css('grid-template-columns', '6fr 1fr 1fr 1fr 1fr 1fr 1fr');
 		$('.text-rabbit-1').css("text-orientation", "mixed");
        $('.text-rabbit-1').css("writing-mode", "horizontal-tb");
        $('.rabbit-1-text').css("display", "inline-block");
 
     })
         $('.grid-rabbit-item-2').on('click',function(){
-        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 10fr 1fr 1fr 1fr 1fr 1fr');
+        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 6fr 1fr 1fr 1fr 1fr 1fr');
 		$('.text-rabbit-2').css("text-orientation", "mixed");
        $('.text-rabbit-2').css("writing-mode", "horizontal-tb");
        $('.rabbit-2-text').css("display", "inline-block");
 
     })
         $('.grid-rabbit-item-3').on('click',function(){
-        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 1fr 10fr 1fr 1fr 1fr 1fr');
+        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 1fr 6fr 1fr 1fr 1fr 1fr');
 		$('.text-rabbit-3').css("text-orientation", "mixed");
        $('.text-rabbit-3').css("writing-mode", "horizontal-tb");
        $('.rabbit-3-text').css("display", "inline-block");
@@ -302,33 +302,35 @@ document.getElementById(id).style.display = visibility;
     })
 
     $('.grid-rabbit-item-4').on('click',function(){
-        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 1fr 1fr 10fr 1fr 1fr 1fr');
+        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 1fr 1fr 6fr 1fr 1fr 1fr');
        $('.text-rabbit-4').css("text-orientation", "sideways");
        $('.text-rabbit-4').css("writing-mode", "horizontal-tb");
        $('.rabbit-4-text').css("display", "inline-block");
     })
 
         $('.grid-rabbit-item-5').on('click',function(){
-        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 1fr 1fr 1fr 10fr 1fr 1fr');
+        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 1fr 1fr 1fr 6fr 1fr 1fr');
 		$('.text-rabbit-5').css("text-orientation", "mixed");
        $('.text-rabbit-5').css("writing-mode", "horizontal-tb");
        $('.rabbit-5-text').css("display", "inline-block");
 
     })
         $('.grid-rabbit-item-6').on('click',function(){
-        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 1fr 1fr 1fr 1fr 10fr 1fr');
+        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 1fr 1fr 1fr 1fr 6fr 1fr');
 		$('.text-rabbit-6').css("text-orientation", "mixed");
        $('.text-rabbit-6').css("writing-mode", "horizontal-tb");
        $('.rabbit-6-text').css("display", "inline-block");
 
     })
         $('.grid-rabbit-item-7').on('click',function(){
-        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 1fr 1fr 1fr 1fr 1fr 10fr');
+        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 1fr 1fr 1fr 1fr 1fr 6fr');
 		$('.text-rabbit-7').css("text-orientation", "mixed");
        $('.text-rabbit-7').css("writing-mode", "horizontal-tb");
        $('.rabbit-7-text').css("display", "inline-block");
 
     })
+
+       
 
 </script>
 </body>
