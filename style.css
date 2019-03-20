@@ -233,11 +233,15 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	margin: 0 auto;
 	height: 500px;
 	width: 500px;
+	display: block;
 	align-content: center;
 	line-height: 500px;
 	-webkit-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.overlay-item-p h1 {
+	font-size: 42px;
 }
 
 .overlay-item-p a {
@@ -255,6 +259,10 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	color: #4DCCBD;
 
 }
+
+
+
+
 
 .grid-rabbit {
 	display: grid;
@@ -489,6 +497,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	margin-top: 50px;
 	height: 500px;
 	width: 100%;
+	font-size: 10px;
 	text-align: center;
 	vertical-align: middle;
 
@@ -502,6 +511,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 .rabbit-3-text {
 	padding: 5px 0 5px 0;
 	color: #1E254A;
+	
 }
 .rabbit-1-text h3,
 .rabbit-6-text h3,
@@ -511,6 +521,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 .rabbit-2-text h3,
 .rabbit-3-text h3, {
 	color: #1E254A;
+	
 }
 
 .rabbit-4-text i {
@@ -626,6 +637,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 /* MAZE */
 
 .grid-maze {
+	border-top: 10px solid #D6FFF6;
 	display: grid;
 	grid-template-areas:
 	"11 21 31 41 51 61 71"
@@ -653,6 +665,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	grid-area: "11";
 	background-color: #1E254A;
 	margin-left: 0;
+
 	 }
 	.maze-21 {
 	grid-area: "21";
@@ -687,11 +700,12 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 
 	.maze-12 {
 	grid-area: "12";
-	background-color: #1E254A; }
+	background-color: #1E254A; 
+}
 	.maze-22 {
 	grid-area: "22";
 	background-color: #D6FFF6;
-	border-radius: 100% 0 100% 100%; }
+	border-radius: 0 100% 100% 100%; }
 	.maze-32 {
 	grid-area: "32";
 	background-color: #1E254A; }
