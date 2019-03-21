@@ -740,7 +740,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 }
 	.maze-22 {
 	grid-area: "22";
-	background-color: #D6FFF6;
+	background-color: #4DCCBD;
 	border-radius: 0 100% 100% 100%; }
 	.maze-32 {
 	grid-area: "32";
@@ -901,7 +901,8 @@ border-radius: 0 25px 0 0;}
 	background-color: #1E254A; }
 	.maze-66 {
 	grid-area: "66";
-	background-color: #1E254A;
+	border-radius: 500px 500px 0 500px;
+	background-color: #FF8484;
 	 }
 	.maze-76 {
 	grid-area: "76";
