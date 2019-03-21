@@ -166,6 +166,7 @@
 	
 }
 
+
 .overlayP a {
 	color: #FF8484;
     padding: 8px;
@@ -201,6 +202,16 @@
 	-moz-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 }
+.overlay-1-big {
+	grid-template-rows: 3fr 1fr 1fr;
+}
+.overlay-2-big {
+	grid-template-rows: 1fr 3fr 1fr;
+}
+.overlay-3-big {
+	grid-template-rows: 1fr 1fr 3fr;
+}
+
 .overlay-item-2 {
 	border-radius: 100px;
 	background-color: #4DCCBD;
@@ -224,7 +235,10 @@
 box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 
 }
-
+.overlay-wide {
+	height: 300px;
+	line-height: 300px;
+}
 .overlay-item-p {
 	font-size: 150px;
 	border-radius: 500px;
@@ -259,8 +273,15 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	color: #4DCCBD;
 
 }
-
-
+.overlay-1-float,
+.overlay-2-float {
+	float: left;
+	margin-left: 15px;
+}
+.overlay-3-float {
+	float: right;
+	margin-right: 15px;
+}
 
 
 
@@ -268,7 +289,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 150vh;
-	height: 150vh;
+	height: 100vh;
 	overflow: hidden;
 	width: 100vw;
 	grid-column-gap: 3vw;
@@ -314,9 +335,21 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	text-align: center;
 	vertical-align: middle;
 	padding-top: 160px;
-	writing-mode: vertical-rl;
+
+}
+
+.text-rabbit-1,
+.text-rabbit-2,
+.text-rabbit-3,
+.text-rabbit-4,
+.text-rabbit-5,
+.text-rabbit-6,
+.text-rabbit-7 {
+		writing-mode: vertical-rl;
 	text-orientation: upright;
 }
+
+
 .grid-rabbit-item-1 a:hover,
 .grid-rabbit-item-7 a:hover{
 	color: #FF8484;
@@ -501,6 +534,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	text-align: center;
 	vertical-align: middle;
 
+
 }
 .rabbit-1-text h1,
 .rabbit-6-text h1,
@@ -575,7 +609,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 0.915fr 1fr 1fr 1fr;
 	grid-template-rows: 100vh;
-	height: 90vh;
+	height: 100vh;
 	overflow: hidden;
 	width: 100vw;
 	grid-column-gap: 2vw;
@@ -654,8 +688,9 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	background-color: #1E254A;
 	z-index: 0;
 	position: relative;
-	grid-template-rows: 14.28vw 14.28vw 14.28vw 14.28vw 14.28vw 14.28vw 14.28vw;
-	grid-template-columns: 1fr 1fr 1fr 0.8fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 0.915fr 1fr 1fr 1fr;
+
 
 
 
@@ -669,7 +704,8 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	 }
 	.maze-21 {
 	grid-area: "21";
-	background-color: #1E254A; }
+	background-color: #1E254A;
+}
 	.maze-31 {
 	grid-area: "31";
 	background-color: #1E254A; }
@@ -730,7 +766,8 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	 .maze-56,
 	 .maze-66,
 	 .maze-41,
-	 .maze-22  {
+	 .maze-22,
+	 .maze-47  {
 	 	color: #1E254A;
 	 	text-align: center;
 	 	vertical-align: middle;
@@ -857,16 +894,84 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	}
 	.maze-46 {
 	grid-area: "46";
-	background-color: #D6FFF6; }
+	background-color: #D6FFF6; 
+border-radius: 0 25px 0 0;}
 	.maze-56 {
 	grid-area: "56";
-	background-color: #D6FFF6; }
+	background-color: #1E254A; }
 	.maze-66 {
 	grid-area: "66";
-	background-color: #D6FFF6;
-	border-radius: 0 25px 25px 0 ; }
+	background-color: #1E254A;
+	 }
 	.maze-76 {
 	grid-area: "76";
 	background-color: #1E254A; }
 
+		.maze-17 {
+	grid-area: "16";
+	background-color: #1E254A;	 }
+	.maze-27 {
+	grid-area: "26";
+	background-color:  #1E254A;
+	 }
+	.maze-37 {
+	grid-area: "36";
+	background-color:  #1E254A;
+	}
+	.maze-47 {
+	grid-area: "46";
+	background-color: #D6FFF6; 
+border-radius: 0 0 25px 25px;}
+	.maze-57 {
+	grid-area: "56";
+	background-color: #1E254A; }
+	.maze-67 {
+	grid-area: "66";
+	background-color:  #1E254A;
+	 }
+	.maze-77 {
+	grid-area: "76";
+	background-color: #1E254A; }
+
+.rabbit-1 {
+	grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.rabbit-2 {
+	grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr 1fr;
+}
+.rabbit-3 {
+	grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr 1fr;
+}
+.rabbit-4 {
+	grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
+}
+.rabbit-5 {
+	grid-template-columns: 1fr 1fr 1fr 1fr 3fr 1fr 1fr;
+}
+.rabbit-6 {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 3fr 1fr;
+}
+.rabbit-7 {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 3fr;
+}
+
+.p-o {
+	writing-mode:;
+}
+.text-o {
+	text-orientation: mixed;
+	writing-mode: horizontal-tb;
+
+	
+}
+
+.noDisplay {
+
+	display: inline-block;
+}
+
+.orientation {
+	text-orientation: upright;
+	writing-mode: vertical-lr;
+}
 

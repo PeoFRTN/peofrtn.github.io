@@ -21,9 +21,9 @@
 
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-angle-double-left"></i></a>
   <div class="overlay-content">
-    <div class="overlay-item-1"><a href="#"><i class="fas fa-male"></i>&nbsp;&nbsp;&nbsp;ABOUT</a></div>
-    <div class="overlay-item-2"><a href="#""><i class="fas fa-book"></i>&nbsp;&nbsp;&nbsp;PROJECTS</a></div>
-    <div class="overlay-item-3"><a href="#"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;CONTACT</a></div>
+    <div class="overlay-item-1"><a class="overlay-1" href="#"><i class="fas fa-male"></i>&nbsp;&nbsp;&nbsp;ABOUT</a></div>
+    <div class="overlay-item-2"><a class="overlay-2" href="#""><i class="fas fa-book"></i>&nbsp;&nbsp;&nbsp;PROJECTS</a></div>
+    <div class="overlay-item-3"><a class="overlay-3" href="#"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;CONTACT</a></div>
   </div>
 </div>
 
@@ -60,7 +60,7 @@
 <div class="main">
 
 
-<div class="grid-rabbit">
+<div id="rabbit" class="grid-rabbit">
 <div class="grid-rabbit-item-1">
 	<a href="#" <i class="fas fa-guitar"></i>
 
@@ -249,7 +249,7 @@
 			<i class="fas fa-chevron-circle-right"></i>
 		</div>
 		<div class="maze-66">
-			<i class="fas fa-city"></i>
+			
 		</div>
 		<div class="maze-76">
 			
@@ -257,7 +257,9 @@
 			<div class="maze-17"></div>
 		<div class="maze-27"></div>
 		<div class="maze-37"></div>
-		<div class="maze-47"></div>
+		<div class="maze-47">
+			<i class="fas fa-city"></i>
+		</div>
 		<div class="maze-57"></div>
 		<div class="maze-67"></div>
 		<div class="maze-77"></div>
@@ -276,6 +278,13 @@
 	
 
 <script>
+	    function toggle(){
+if(document.getElementById("rabbit").className == "hide")
+   document.getElementById("MyId").className = "show";
+else
+   document.getElementById("MyId").className = "hide";
+}
+
 
 </script>
 
@@ -293,7 +302,7 @@ function closeNav() {
 }
 
 	function openNavP() {
-  setTimeout(function(){ document.getElementById("myNavP").style.display = "block"; }, 200);
+  setTimeout(function(){ document.getElementById("myNavP").style.display = "block"; }, 50);
 }
 
 function closeNavP() {
@@ -306,63 +315,60 @@ function closeNavP() {
 </script>
 
 <script>
-	    $('.grid-rabbit-item-1').on('click',function(){
-        $(this).closest('.grid-rabbit').css('grid-template-columns', '3fr 1fr 1fr 1fr 1fr 1fr 1fr');
-		$('.text-rabbit-1').css("text-orientation", "mixed");
-       $('.text-rabbit-1').css("writing-mode", "horizontal-tb");
-       $('.rabbit-1-text').css("display", "inline-block");
+ 		$( ".overlay-item-1" ).click(function() {
+  		$(".overlay-content").toggleClass( "overlay-1-big" );
+  		$(".overlay-item-1").toggleClass( "overlay-wide" );
+  		$(".overlay-1").toggleClass( "overlay-1-float" );
+		});
+		$( ".overlay-item-2" ).click(function() {
+  		$(".overlay-content").toggleClass( "overlay-2-big" );
+  		$(".overlay-item-2").toggleClass( "overlay-wide" );
+  		$(".overlay-2").toggleClass( "overlay-2-float" );
+		});
+		$( ".overlay-item-3" ).click(function() {
+  		$(".overlay-content").toggleClass( "overlay-3-big" );
+  		$(".overlay-item-3").toggleClass( "overlay-wide" );
+  		$(".overlay-3").toggleClass( "overlay-3-float" );
+		});
 
-    })
-        $('.grid-rabbit-item-2').on('click',function(){
-        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 3fr 1fr 1fr 1fr 1fr 1fr');
-		$('.text-rabbit-2').css("text-orientation", "mixed");
-       $('.text-rabbit-2').css("writing-mode", "horizontal-tb");
-       $('.rabbit-2-text').css("display", "inline-block");
+/* TOGGLE RABBIT + VERTICAL/HORIZONTAL HEADLINE */
 
-    })
-        $('.grid-rabbit-item-3').on('click',function(){
-        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 1fr 3fr 1fr 1fr 1fr 1fr');
-		$('.text-rabbit-3').css("text-orientation", "mixed");
-       $('.text-rabbit-3').css("writing-mode", "horizontal-tb");
-       $('.rabbit-3-text').css("display", "inline-block");
+	    $( ".grid-rabbit-item-1" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-1" );
+  		$(".rabbit-1-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-1').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-2" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-2" );
+  		$(".rabbit-2-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-2').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-3" ).click(function() {
+  		$( ".grid-rabbit").toggleClass( "rabbit-3" );
+  		$(".rabbit-3-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-3').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-4" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-4" );
+  		$(".rabbit-4-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-4').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-5" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-5" );
+  		$(".rabbit-5-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-5').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-6" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-6" );
+  		$(".rabbit-6-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-6').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-7" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-7" );
+  		$(".rabbit-7-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-7').toggleClass("text-o");
+		});
 
-    })
-
-    $('.grid-rabbit-item-4').on('click',function(){
-        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 1fr 1fr 3fr 1fr 1fr 1fr');
-       $('.text-rabbit-4').css("text-orientation", "sideways");
-       $('.text-rabbit-4').css("writing-mode", "horizontal-tb");
-       $('.rabbit-4-text').css("display", "inline-block");
-    })
-
-
-        $('.grid-rabbit-item-5').on('click',function(){
-        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 1fr 1fr 1fr 3fr 1fr 1fr');
-		$('.text-rabbit-5').css("text-orientation", "mixed");
-       $('.text-rabbit-5').css("writing-mode", "horizontal-tb");
-       $('.rabbit-5-text').css("display", "inline-block");
-
-    })
-        $('.grid-rabbit-item-6').on('click',function(){
-        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 1fr 1fr 1fr 1fr 3fr 1fr');
-		$('.text-rabbit-6').css("text-orientation", "mixed");
-       $('.text-rabbit-6').css("writing-mode", "horizontal-tb");
-       $('.rabbit-6-text').css("display", "inline-block");
-
-    })
-        $('.grid-rabbit-item-7').on('click',function(){
-        $(this).closest('.grid-rabbit').css('grid-template-columns', '1fr 1fr 1fr 1fr 1fr 1fr 3fr');
-		$('.text-rabbit-7').css("text-orientation", "mixed");
-       $('.text-rabbit-7').css("writing-mode", "horizontal-tb");
-       $('.rabbit-7-text').css("display", "inline-block");
-
-    })
-
-
-
-
-
-	
 </script>
  
 
