@@ -69,7 +69,7 @@
 	margin: 5px 10px 5px 10px;
 	padding: 10 10px 10 10px;
 	height: 60px;
-	border-radius: 100%;
+	
 	width: 60px;
 	position: relative;
 }
@@ -81,16 +81,25 @@
 	color: #FFFAF0;
 
 }
-.nav ul li:hover{
+.dropdown:hover{
 	transition: 0.5s;
 	background-color: #FF8484;
 	border-radius: 100%;
+	
 }
-.nav ul li:hover a{
-	transition: 0.5s;
-	color: #D6FFF6;
-	border-radius: 100%;
+.dropdown-2 i:hover{
+	transition: 0.3s;
+	color: #FF8484;
+
 }
+.dropdown-2 i {
+	color: #4DCCBD;
+	font-size: 250%;
+	position: absolute;
+	top: 17%;
+	left: 17%;
+}
+
 .dropdown i {
 	color: #4DCCBD;
 	font-size: 250%;
@@ -107,7 +116,7 @@
 }
 
 .main {
-	height: 300vh;
+	height: 400vh;
 	background-color: #1E254A;
 	width: 100%;
 	overflow: hidden;
@@ -149,18 +158,18 @@
 	 height: 100px;
 	 line-height: 100px;
 	 width: 85vw;
-	 background-color: #FF8484;
+	 background-color: #1E254A;
 }
 .contact h2 {
-	font-size: 35px;
-	height: 50px;
-	margin: 0;
+	width: 100vw;
+	font-size: 30px;
+	height: 100px;
+	margin: 0 auto;
 	visibility: show;
 	line-height: 100px;
 	text-align: center;
-	color: #D6FFF6;
-	letter-spacing: 0;
-	font-family: 'Baloo Chettan', cursive;
+	color: #FF8484;
+	font-family: 'Dosis', sans-serif;
 
 }
 .about {
@@ -171,7 +180,7 @@
 	 height: 100px;
 	 line-height: 100px;
 	 width: 85vw;
-	 background-color: #1E254A;
+	 background-color: #FF8484;
 	 overflow: hidden;
 	 visibility: show;
 }
@@ -179,36 +188,38 @@
 	margin: 0 auto;
 	border-radius: 100px 100px 100px 100px;
 	display: none;
-
 	 height: 100px;
 	 line-height: 100px;
-	 width: 85vw;
-	 background-color: #D6FFF6;
+	 width: 65vw;
+	 background-color: #4DCCBD;
 	 overflow: hidden;
 	 visibility: show;
 	}
+
 .about h2 {
-	padding: 10px 0 0 10px;
+	float: left;
+	padding: 10px 0 10px 25px;
 	font-size: 2vw;
 	height: 20px;
 	line-height: 35px;
 	color: #D6FFF6;
 	 visibility: show;
 	 text-align: center;
-	 font-family: 'Baloo Chettan', cursive;
+	 font-family: 'Dosis', sans-serif;
 }
 .projects i {
 	font-size: 70%;
+
 }
 .projects h2 {
 	padding: 10px 0 0 10px;
 	font-size: 2vw;
 	height: 20px;
 	line-height: 30px;
-	color:  #1E254A;;
+	color:  #D6FFF6;
 	 visibility: show;
 	 text-align: center;
-	 font-family: 'Baloo Chettan', cursive;
+	 font-family: 'Dosis', sans-serif;
 }
 .overlay-content {
     position: relative;
@@ -271,12 +282,18 @@
 }
 .overlay-1-big {
 	grid-template-rows: 3fr 1fr 1fr;
+	height: 300px;
+	line-height: 300px;
 }
 .overlay-2-big {
 	grid-template-rows: 1fr 3fr 1fr;
+	height: 300px;
+	line-height: 300px;
 }
 .overlay-3-big {
 	grid-template-rows: 1fr 1fr 3fr;
+	height: 300px;
+	line-height: 300px;
 }
 
 .overlay-item-2 {
@@ -336,6 +353,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	margin-left: -20px;
 	font-size: 35vh;
 	color: #1E254A;
+
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -363,7 +381,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 150vh;
-	height: 100vh;
+	height: 150vh;
 	overflow: hidden;
 	width: 100vw;
 	grid-column-gap: 3vw;
@@ -421,6 +439,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 .text-rabbit-7 {
 		writing-mode: vertical-rl;
 	text-orientation: upright;
+	padding: 5px;
 }
 
 
@@ -603,7 +622,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	margin-top: 50px;
 	height: 500px;
 	width: 100%;
-	font-size: 10px;
+	font-size: 15px;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -613,8 +632,9 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 .rabbit-7-text h1,
 .rabbit-4-text h1,
 .rabbit-2-text h1,
-.rabbit-3-text {
-	padding: 5px 0 5px 0;
+.rabbit-3-text h1{
+	font-size: 1em;
+	padding: 20px;
 	color: #1E254A;
 	
 }
@@ -625,7 +645,22 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 .rabbit-4-text h3,
 .rabbit-2-text h3,
 .rabbit-3-text h3 {
+	font-family: 'Dosis', sans-serif;
 	color: #1E254A;
+	padding: 0 20px 10px 20px;
+	
+}
+.rabbit-1-text h4,
+.rabbit-6-text h4,
+.rabbit-5-text h4,
+.rabbit-7-text h4,
+.rabbit-4-text h4,
+.rabbit-2-text h4,
+.rabbit-3-text h4 {
+	font-family: 'Dosis', sans-serif;
+	color: #1E254A;
+	padding: 15px;
+	text-align: justify;
 	
 }
 
@@ -679,8 +714,8 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	.grid-rabbit {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 0.915fr 1fr 1fr 1fr;
-	grid-template-rows: 100vh;
-	height: 100vh;
+	grid-template-rows: 150vh;
+	height: 150vh;
 	overflow: hidden;
 	width: 100vw;
 	grid-column-gap: 2vw;
@@ -735,12 +770,15 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	.contact,
 	.about,
 	.projects {
+		
 		width: 75vw;
+
 	}
 	.contact h2 {
 	font-size: 3vw;
 	text-align: center;
 	vertical-align: middle;
+	padding: 25px;
 	}
 	.about h2 {
 		margin: 10px;
@@ -749,6 +787,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	font-size: 3vw;
 	text-align: center;
 	vertical-align: middle;
+	padding: 25px;
 	}
 	.projects h2{
 		margin: 10px;
@@ -757,6 +796,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	font-size: 3vw;
 	text-align: center;
 	vertical-align: middle;
+	padding: 25px;
 
 	}
 
@@ -766,6 +806,7 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 .lock:hover .fa-rocket:before {
     content: "\f753";
     color: #FF8484;
+    transition: ;
 }
 
 
@@ -1085,8 +1126,7 @@ border-radius: 0 0 25px 25px;}
 }
 .maze-62 i,
 .maze-44 i,
-.maze-26 i,
-.maze-47 i{
+.maze-26 i {
 	color: #4DCCBD;
 }
 
