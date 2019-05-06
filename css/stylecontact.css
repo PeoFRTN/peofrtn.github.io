@@ -682,3 +682,137 @@
 	font-size: 36px;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+	max-width:75vw;
+	width:75vw;
+	margin:0 auto;
+	position:relative;
+	font-family:"Helvetica", sans-serif; 
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	
+	
+}
+
+#contactform input[type="text"],
+#contactform input[type="email"],
+#contactform input[type="tel"],
+#contactform input[type="url"], #contactform textarea,
+#contactform button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contactform {
+	
+	padding:25px;
+	margin:0 0;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contactform input[type="text"],
+#contactform input[type="email"],
+#contactform input[type="tel"],
+#contactform input[type="url"],
+#contactform textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	border-radius: 5px;
+}
+
+#contactform input[type="text"]:hover,
+#contactform input[type="email"]:hover,
+#contactform input[type="tel"]:hover,
+#contactform input[type="url"]:hover,
+#contactform textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+	border-radius: 5px;
+}
+
+#contactform textarea {
+	height: 200px;
+	max-width:100%;
+  	resize:none;
+  	border-radius: 5px;
+}
+
+#contactform button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background: #3fa9ff;
+	color:#F7F7F7;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+	height: 50px;
+	border-radius: 5px;
+}
+
+#contactform button[type="submit"]:hover {
+	background:#0BA2DB;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contactform button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contactform input:focus,
+#contactform textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}

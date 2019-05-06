@@ -16,7 +16,7 @@
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   	crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/stylecontact.css">
 
 
 	<title>Distribution GDL</title>
@@ -30,18 +30,18 @@
 	
 </div>
 <div class="navbar">
-	<div class="logo"><a href="#"><i class="fas fa-bookmark"></i>&nbsp;&nbsp;Distribution GDL</a></div>
-	<div class="about"><a href="#about">À PROPOS</a></div>
-	<div class="products"><a href="#produits">PRODUITS</a></div>
-	<div class="contact"><a href="contact.html">CONTACT</a></div>
+	<div class="logo"><a href="index.html"><i class="fas fa-bookmark"></i>&nbsp;&nbsp;Distribution GDL</a></div>
+	<div class="about"><a href="index.html">À PROPOS</a></div>
+	<div class="products"><a href="index.html">PRODUITS</a></div>
+	<div class="contact"><a href="#">CONTACT</a></div>
 	<div id="menuicon"><a onclick="openSlideMenu()"><i class="fas fa-bars"></i></a></div>
 
 </div>
 <div id="side-menu" class="side-nav">
                 <a href="index.html">Distribution GDL</a>
                 <hr class="sep">
-                <a href="#produits">Produits</a>
-                <a href="#about">À Propos</a>
+                <a href="index.html">Produits</a>
+                <a href="index.html">À Propos</a>
                 <a href="contact.html">Contact</a>
                 
                 <a class="btn-close" onclick="closeSlideMenu()">&times;</a>
@@ -51,48 +51,40 @@
 
 <div class="scene-1">
 	<div class="scene-1-text">
-		<h1 id="GDL"> Distribution<br></h1><h1 > GDL </h1>
+		<!-- DÉBUT DU CONTACT FORM !-->
+<div class="container">  
+  <form id="contactform" action="contactform.php" method="post">
+
+    <fieldset>
+      <input placeholder="Nom" type="text" tabindex="1" name="name" required >
+      
+    </fieldset>
+
+    <fieldset>
+      <input placeholder="Email" type="text" name="email" tabindex="2" >
+      
+    </fieldset>
+    <fieldset>
+      <input placeholder="Téléphone" type="tel" name="phone" tabindex="3" >
+      
+    </fieldset>
+    <fieldset>
+      <input placeholder="Site web" type="text" name="url" tabindex="4" >
+      
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Tapez votre message ici..." tabindex="5" name="message"></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Envoyer</button>
+    </fieldset>
+  </form> 
+</div>
+<!-- FIN DU CONTACT FORM !-->
 
 	</div>
 </div>
-<div id="produits" class="scene-2">
-	<div class="comptoir"><a href="comptoir.html">Comptoirs</a></div>
-	<div class="thermo"><a href="thermo.html">Thermostats</a></div>
-	<div class="ceramique"><a href="ceramique.html">Céramiques</a></div>
-	<div class="lum"><a href="luminaire.html">Luminaires</a></div>
-	<div class="bain"><a href="bain.html">Bains</a></div>
-	<div class="evier"><a href="evier.html">Éviers</a></div>
-	<div class="rob"><a href="rob.html">Robinetterie</a></div>
-	<div class="plancher"><a href="plancher.html">Planchers</a></div>
-	<div class="lavabo"><a href="lavabo.html">Lavabos</a></div>
-</div>
-<div class="scene-3">
 
-	<div class="slide-1">
-		<div class="slidein-top">
-			<h1>Services</h1>
-		</div>
-		<div class="slidein-bot">
-			<div class="bot-left"><i class="fas fa-truck-loading"></i><h5>Livraison</h5></div>
-			<div class="bot-mid"><i class="fas fa-tools"></i><h5>Installation</h5></div>
-			<div class="bot-right"><i class="fas fa-award"></i><h5>Certification</h5></div>
-
-		</div>
-		
-
-
-	</div>
-	
-	</div>
-
-</div>
-<div id="about" class="scene-4">
-	<div class="centerscene-4">
-		<h1>Qui sommes-nous?</h1><hr>
-		<h2>L'équipe Distribution GDL est maintenue par deux jeunes passionnés. À la recherche des nouvelles tendances, des meilleurs rapports qualité/prix, l'équipe Distribution GDL s'entretient avec plus d'une centaine d'entrepreneurs, de courtiers ainsi que de plusieurs divisions à travers le monde.</h2>
-
-	</div>
-</div>
 
 <div class="footer">
 	<div class="foot1">
