@@ -31,49 +31,31 @@
 </div>
 <div class="navbar">
 	<div class="logo"><a href="#"><i class="fas fa-bookmark"></i>&nbsp;&nbsp;Distribution GDL</a></div>
-	<div class="about"><a href="#">À PROPOS</a></div>
-	<div class="products"><a href="#">PRODUITS</a></div>
+	<div class="about"><a href="#about">À PROPOS</a></div>
+	<div class="products"><a href="#produits">PRODUITS</a></div>
 	<div class="contact"><a href="#">CONTACT</a></div>
-	<div id="menuicon"><a href="#"><i class="fas fa-bars"></i></a></div>
+	<div id="menuicon"><a onclick="openSlideMenu()"><i class="fas fa-bars"></i></a></div>
 
 </div>
-<div class="subprod">
-	<div class="sub1">
-		<h1>Cuisine</h1>
-		<div class="sublink">
-	<a href="comptoir.html">| Comptoirs</a>
-	<a href="ceramique.html">| Céramiques</a>
-	<a href="evier.html">| Éviers</a>
-	<a href="rob.html">| Robinetterie</a>
-	<a href="plancher.html">| Planchers</a>
-	</div>
-	</div>
-	<div class="sub2">
-		<h1>Salle de bain</h1>
-		<div class="sublink">
-		<a href="bain.html">| Bains</a>
-		<a href="lavabo.html">| Lavabos</a>
-		<a href="rob.html">| Robinetterie</a>
-		<a href="plancher.html">| Planchers</a>
-	</div>
-	</div>
-	<div class="sub3">
-		<h1>Autres</h1>
-		<div class="sublink">
-		<a href="thermo.html">| Thermostats</a>
-		<a href="luminaire.html">| Luminaires</a>
-	</div>
-	</div>
+<div id="side-menu" class="side-nav">
+                <a href="index.html">Distribution GDL</a>
+                <hr class="sep">
+                <a href="#produits">Produits</a>
+                <a href="#about">À Propos</a>
+                <a href="#contact">Contact</a>
+                
+                <a class="btn-close" onclick="closeSlideMenu()">&times;</a>
 
 
-</div>
+            </div>
+
 <div class="scene-1">
 	<div class="scene-1-text">
 		<h1 id="GDL"> Distribution<br></h1><h1 > GDL </h1>
 
 	</div>
 </div>
-<div class="scene-2">
+<div id="produits" class="scene-2">
 	<div class="comptoir"><a href="comptoir.html">Comptoirs</a></div>
 	<div class="thermo"><a href="thermo.html">Thermostats</a></div>
 	<div class="ceramique"><a href="ceramique.html">Céramiques</a></div>
@@ -104,19 +86,41 @@
 	</div>
 
 </div>
-<div class="scene-4">
+<div id="about" class="scene-4">
 	<div class="centerscene-4">
-		
+		<h1>Qui sommes-nous?</h1><hr>
+		<h2>L'équipe Distribution GDL est maintenue par deux jeunes passionnés. À la recherche des nouvelles tendances, des meilleurs rapports qualité/prix, l'équipe Distribution GDL s'entretient avec plus d'une centaine d'entrepreneurs, de courtiers ainsi que de plusieurs divisions à travers le monde.</h2>
+
 	</div>
 </div>
 
 <div class="footer">
-	<div class="foot1"></div>
+	<div class="foot1">
+		<div class="foot1-top">
+			<i class="fas fa-map-marker-alt"></i><h5>Candiac, Qc, Canada</h5>
+		</div>
+		<div class="foot1-mid">
+			<i class="fas fa-phone"></i><h5>1-800-888-0123</h5>
+		</div>
+		<div class="foot1-bot">
+			<i class="fas fa-envelope"></i><h5>info@distributiongdl.com</h5>
+		</div>
+	</div>
 	<div class="foot2"></div>
-	<div class="foot3"></div>
+
 </div>
 
 <script>
+	$(document).ready(function() {
+  $('a[href^="#"]').click(function() {
+      var target = $(this.hash);
+      if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+      if (target.length == 0) target = $('html');
+      $('html, body').animate({ scrollTop: target.offset().top-50 }, 1000);
+      return false;
+  });
+});
+
 $(function() {
         var header = $(".navbar");
         $(window).scroll(function() {    
@@ -129,6 +133,12 @@ $(function() {
         });
   
 });
+function openSlideMenu(){
+      document.getElementById("side-menu").style.width = "100vw";
+    }
+function closeSlideMenu(){
+      document.getElementById("side-menu").style.width = "0";
+    }
 
 $(function() {
         var slide = $(".slide-1");
@@ -146,6 +156,10 @@ $(function() {
 
 <script>
 		$( ".products" ).click(function() {
+  		$(".subprod").toggleClass( "gridshow" );
+  		
+		});
+		$( "#menuicon" ).click(function() {
   		$(".subprod").toggleClass( "gridshow" );
   		
 		});
