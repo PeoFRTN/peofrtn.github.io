@@ -25,16 +25,16 @@
                 <div class="content-mid">
                         <form class="form" >
                                 First name:<br>
-                                <input type="text" name="firstname" placeholder="     Enter your  first name"><br>
+                                <input class="form-input" type="text" name="firstname" placeholder="     Enter your  first name"><br>
                                 Last name:<br>
-                                <input type="text" name="lastname" placeholder="     Enter your  last name"><br>
+                                <input class="form-input"  type="text" name="lastname" placeholder="     Enter your  last name"><br>
                                 Phone number:<br>
-                                <input type="tel" name="tel" placeholder="     ex: 514-123-4567"><br>
+                                <input class="form-input"  type="tel" name="tel" placeholder="     ex: 514-123-4567"><br>
                                 Email address:<br>
-                                <input type="text" name="email" placeholder="     Enter your email address"><br>
+                                <input class="form-input"  type="text" name="email" placeholder="     Enter your email address"><br>
                                 
                                 Delivery address:<br>
-                                <input type="text" id="searchTextField" class="form-control" placeholder="Only needed with the DELIVERY">
+                                <input class="form-input"  type="text" id="searchTextField" placeholder="Only needed with the DELIVERY">
 
                                 <div id="geomap">
  
@@ -45,9 +45,16 @@
                                         
                                         <input type="radio" name="delivery" value="Delivery">Delivery
                                         <input type="radio" name="delivery" value="Mail">Mail Order
-                                        <input type="radio" name="delivery" value="PickUp">Pick-Up 
+                                        <input class="form-input" type="text" name="mailorder" placeholder="Enter your P.O box number">
+                                        <input type="radio" name="delivery" value="PickUp">Pick-Up
+                                        <select>
+                                                <option value="12:30">12:30</option>
+                                                <option value="14:30">14:30</option>
+                                                <option value="16:30">16:30</option>
+                                                <option value="18:30">18:30</option>
+                                              </select> 
                                 </div>
-                                <input type="submit" name="submit"  placeholder="SUBMIT">
+                                <input class="form-input"  id="submit" type="submit" name="submit"  placeholder="SUBMIT">
                                
                         </form>
 
