@@ -103,8 +103,18 @@ background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(11,148,89,1) 12%, rgb
   }
 
   #geomap {
-      width: 50vw;
-      height: auto;
+      width: 350px;
+      height: 350px;
       margin: 15px;
       border-radius: 5px;
+      background-color: rgba(0,212,255,1);
+  }
+
+
+
+
+  @media only screen and (max-width: 750px) {
+    .form > input {
+        width: 250px;
+    }
   }
