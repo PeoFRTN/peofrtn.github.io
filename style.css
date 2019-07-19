@@ -394,6 +394,9 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	position: relative;
 	transition: 0.8s;
 	transition-timing-function: ease-in-out;
+	display: flex;
+    align-content:center;
+    flex-direction:column;
 
 }
 .grid-rabbit-item-1 a{
@@ -451,6 +454,9 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	position: relative;
 	transition: 0.8s;
 	transition-timing-function: ease-in-out;
+	display: flex;
+    align-content:center;
+    flex-direction:column;
 
 }
 .grid-rabbit-item-2 a{
@@ -480,6 +486,9 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	position: relative;
 	transition: 0.8s;
 	transition-timing-function: ease-in-out;
+	display: flex;
+    align-content:center;
+    flex-direction:column;
 }
 .grid-rabbit-item-3:hover {
 		border-radius: 15px 15px 0 0;
@@ -506,6 +515,11 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	margin-top: 225px;
 	border-radius: 500px 500px 0 0;
 	position: relative;
+	transition: 0.8s;
+	transition-timing-function: ease-in-out;
+	display: flex;
+    align-content:center;
+    flex-direction:column;
 	
 	
 
@@ -538,6 +552,9 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	position: relative;
 	transition: 0.8s;
 	transition-timing-function: ease-in-out;
+	display: flex;
+    align-content:center;
+    flex-direction:column;
 	
 
 }
@@ -564,6 +581,9 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	position: relative;
 	transition: 0.8s;
 	transition-timing-function: ease-in-out;
+	display: flex;
+    align-content:center;
+    flex-direction:column;
 
 }
 .grid-rabbit-item-6:hover {
@@ -589,6 +609,9 @@ box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	position: relative;
 	transition: 0.8s;
 	transition-timing-function: ease-in-out;
+	display: flex;
+    align-content:center;
+    flex-direction:column;
 
 }
 .grid-rabbit-item-7:hover {
