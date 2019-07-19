@@ -7,79 +7,390 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="css/style.css">
-	<title>DooWee</title>
+	  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	  <link rel="stylesheet" href="css/animate.min.css">
+	  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>F O R T I N - web developer</title>
 
 </head>
-
 <body>
-<div class="main">
-       
-        <div class="header">
-                <h1>FRTN</h1>
-        </div>
-        <div class="content">
-                <div class="content-left"></div>
-                <div class="content-mid">
-                        <form class="form" >
-                                First name:<br>
-                                <input class="form-input" type="text" name="firstname" placeholder="     Enter your  first name"><br>
-                                Last name:<br>
-                                <input class="form-input"  type="text" name="lastname" placeholder="     Enter your  last name"><br>
-                                Phone number:<br>
-                                <input class="form-input"  type="tel" name="tel" placeholder="     ex: 514-123-4567"><br>
-                                Email address:<br>
-                                <input class="form-input"  type="text" name="email" placeholder="     Enter your email address"><br>
-                                
-                                Delivery address:<br>
-                                <input class="form-input"  type="text" id="searchTextField" placeholder="Only needed with the DELIVERY">
+<!-- OVERLAY NAV -->
+<div id="myNav" class="overlay">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-angle-double-left"></i></a>
 
-                                <div id="geomap">
- 
-                                </div>
-                                
-                                Method of delivery:<br>
-                                <div class="form-delivery">
-                                        
-                                        <input type="radio" name="delivery" value="Delivery">Delivery
-                                        <input type="radio" name="delivery" value="Mail">Mail Order
-                                        <input class="form-input" type="text" name="mailorder" placeholder="Enter your P.O box number">
-                                        <input type="radio" name="delivery" value="PickUp">Pick-Up
-                                        <select>
-                                                <option value="12:30">12:30</option>
-                                                <option value="14:30">14:30</option>
-                                                <option value="16:30">16:30</option>
-                                                <option value="18:30">18:30</option>
-                                              </select> 
-                                </div>
-                                <input class="form-input"  id="submit" type="submit" name="submit"  placeholder="SUBMIT">
-                               
-                        </form>
+<!-- OVERLAY CONTENT -->
+ <div class="overlay-content">
 
-                </div>
-                <div class="content-right"></div>
-        </div>
+<!-- OVERLAY ITEM 1 -->
+    <div class="overlay-item-1"><a class="overlay-1" href="#"><i class="fas fa-male"></i>&nbsp;&nbsp;&nbsp;ABOUT</a>
+			<div class="about"><h2>Hi! My name is Pierre-Olivier and I am self-taught web developer and a soon to be chemist.<br>
+									I live in Montreal, Canada and I love to code!
+								</h2>
+			</div>
+	</div>
+<!-- OVERLAY ITEM 2 -->
+    <div class="overlay-item-2"><a class="overlay-2" href="#""><i class="fas fa-book"></i>&nbsp;&nbsp;&nbsp;PROJECTS</a>
+			<div class="projects"><h2>DISTRIBUTION GDL [development/design]</h2><a href="https://www.distributiongdl.com"><i class="fas fa-location-arrow"></i></a>
+								  
+			</div>
+    </div>
+
+
+<!-- OVERLAY ITEM 3 -->
+    <div class="overlay-item-3"><a class="overlay-3" href="#"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;CONTACT</a>
+			<div class="contact"><h2>You &nbsp; can &nbsp; reach &nbsp; me &nbsp;here&nbsp;&nbsp;&nbsp;
+									<i class="fas fa-hand-point-right"></i> 
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<i class="fas fa-phone"></i>
+									&nbsp; /&nbsp;
+									<i class="fas fa-sms"></i>
+								</h2>
+			</div>
+    </div>
+
+  </div>
+<!-- OVERLAY CONTENT FIN -->
 
 </div>
-        
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhjp2U8pft99kDtEo5mvLOUvsOyrx5aIY&libraries=places&callback=initialize"></script>          
+<!-- OVERLAY NAV FIN -->
 
-    
+<!-- OVERLAY P -->
+<div id="myNavP" class="overlayP">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNavP()"><i class="fas fa-times-circle"></i></a>
+  <div class="overlay-contentP">  
+    <div class="overlay-item-p"><a class="lock" href="#""><i class="fas fa-rocket"></i></a></div>   
+  </div>
+</div>
+
+
+<!-- NAV BAR -->
+<div class="nav">
+	<!-- NAV LEFT !-->
+		<div class="menu">
+			<a onclick="openNav()" href="#"><i class="fas fa-angle-double-right"></i></a>
+		</div>
+	<!-- NAV RIGHT -->
+		<ul>
+			<li class="dropdown">
+				<a onclick="openNavP()" class="navlink" href="#" ><i class="fab fa-product-hunt"></i></a>
+			</li>
+			<li class="dropdown-2">
+				<a class="navlink" href="#" ><i class="fas fa-language"></i></a>
+			</li>
+		</ul>
+</div>
+
+
+<!-- MAIN -->
+<div class="main">
+
+<!-- GRID RABBIT -->
+<div id="rabbit" class="grid-rabbit">
+
+	<div class="grid-rabbit-item-1">
+		<a href="#" <i class="fas fa-graduation-cap"></i></a>
+		<p class="text-rabbit-1"> EDUCATION </p>
+
+			<div class="rabbit-1-text">
+
+				<i class="fas fa-flask"></i>
+				<h1> B.S.  Chemistry </h1>
+				<h3> Université de Montréal <br> 2019</h3>
+				<h4> "Throughout my undergrade studies, I've learned about every aspect of chemistry and applied 
+				these theories and principles to lab experiences to shape my learnings. I've also been taught to program in C and Java during my second year."</h4>
+				
+			</div>
+	</div>
+	<div class="grid-rabbit-item-2">
+		<a href="#" <i class="fas fa-tv"></i></a>
+		<p class="text-rabbit-2"> WEB </p>
+
+			<div class="rabbit-2-text">
+				<i class="fab fa-github"></i>
+				<h1> Github </h1>
+				<h3>peofrtn.github.io</h3>
+				</div>
+	</div>
+	<div class="grid-rabbit-item-3">
+		<a href="#"  <i class="fas fa-envelope"></i></a>
+		<p class="text-rabbit-3"> MAIL </p>
+
+			<div class="rabbit-3-text">
+				<i class="fas fa-at"></i>
+				<h1> Email </h1>
+				<h3>peofortin@gmail.com</h3>
+			</div>
+	</div>
+	<div class="grid-rabbit-item-4 animated shake">
+		<a href="#" <i class="fas fa-code"></i></a>
+		<p class="text-rabbit-4"> CODE </p>
+
+			<div class="rabbit-4-text">	
+				<i class="fab fa-html5"></i>
+				<h1> HTML</h1>
+				
+
+				<i class="fab fa-css3-alt"></i>
+				<h1> CSS</h1>
+				
+
+				<i class="fab fa-js"></i>
+				<h1> Javascript</h1>
+				
+
+
+				
+			</div>
+	</div>
+	<div class="grid-rabbit-item-5">
+		<a href="#" <i class="fas fa-guitar"></i></a>
+		<p class="text-rabbit-5"> MUSIC </p>
+			<div class="rabbit-5-text">
+				
+
+				<i class="fas fa-music"></i>
+				<h1>Musician</h1>
+				<h3>Guitar, Composer</h3>
+				<h4> "I have traveled all across Canada and the US to perform shows. I have recorded 4 albums and played over 300 shows in all types of venues."</h4>
+			</div>
+	</div>
+	<div class="grid-rabbit-item-6">
+		<a href="#" <i class="fas fa-briefcase"></i></a>
+		<p class="text-rabbit-6"> WORK </p>
+
+			<div class="rabbit-6-text">
+				<i class="fas fa-user-tie"></i>
+				<h1> IKEA </h1>
+				<h3> Collaborator </h3>
+				<h5> 2010 - 2014 </h5>
+			</div>
+	</div>
+	<div class="grid-rabbit-item-7">
+		<a href="#" <i class="fas fa-flask"></i></a>
+		<p class="text-rabbit-7"> CHEMISTRY </p>
+
+			<div class="rabbit-7-text">
+				<i class="fas fa-file"></i>
+				<h1> Laboratory techniques</h1>
+				<h3> TLC, distillation, extraction, cryztallization, titrations, filtrations  </h3>
+			</div>
+	</div>
+</div>
+<!-- GRID RABBIT FIN -->
+
+
+<!-- GRID MAZE -->
+
+<div class="grid-maze">
+		<div class="maze-11"></div>
+		<div class="maze-21"></div>
+		<div class="maze-31"></div>
+		<div class="maze-41">
+			<i class="fas fa-chevron-circle-down"></i>
+		</div>
+		<div class="maze-51">
+			<div class="overlap-51"></div>
+		</div>
+		<div class="maze-61"></div>
+		<div class="maze-71"></div>
+		<div class="maze-12"></div>
+		<div class="maze-22">
+			<i class="fas fa-quote-left"></i>
+		</div>
+		<div class="maze-32"></div>
+		<div class="maze-42">
+			<i class="fas fa-baby"></i>
+		</div>
+		<div class="maze-52">
+			<i class="fas fa-chevron-circle-right"></i>
+		</div>
+		<div class="maze-62">
+			<i class="fas fa-child"></i>
+		</div>
+		<div class="maze-72"></div>
+		<div class="maze-13"></div>
+		<div class="maze-23"></div>
+		<div class="maze-33"></div>
+		<div class="maze-43"></div>
+		<div class="maze-53">
+			<div class="overlap-53">
+			</div>
+		</div>
+		<div class="maze-63">
+			<i class="fas fa-chevron-circle-down"></i>
+		</div>
+		<div class="maze-73"></div>
+		<div class="maze-14"></div>
+		<div class="maze-24">
+			<i class="fas fa-briefcase"></i>
+		</div>
+		<div class="maze-34">
+			<i class="fas fa-chevron-circle-left"></i>
+		</div>
+		<div class="maze-44">
+			<i class="fas fa-guitar"></i>
+		</div>
+		<div class="maze-54">
+			<i class="fas fa-chevron-circle-left"></i>
+		</div>
+		<div class="maze-64">
+			<i class="fas fa-school"></i>
+		</div>
+		<div class="maze-74"></div>
+		<div class="maze-15"></div>
+		<div class="maze-25">
+			<i class="fas fa-chevron-circle-down"></i>
+		</div>
+		<div class="maze-35">
+			<div class="overlap-35"></div>
+		</div>
+		<div class="maze-45"></div>
+		<div class="maze-55"></div>
+		<div class="maze-65"></div>
+		<div class="maze-75"></div>
+		<div class="maze-16"></div>
+		<div class="maze-26">
+			<i class="fas fa-university"></i>
+		</div>
+		<div class="maze-36">
+			<i class="fas fa-chevron-circle-right"></i>
+		</div>
+		<div class="maze-46">
+			<i class="fas fa-user-graduate"></i>
+		</div>
+		<div class="maze-56">
+			<i class="fas fa-chevron-circle-right"></i>
+		</div>
+		<div class="maze-66">
+			<i class="fas fa-quote-right"></i>
+		</div>
+		<div class="maze-76"></div>
+		<div class="maze-17"></div>
+		<div class="maze-27"></div>
+		<div class="maze-37">
+			<div class="overlap-37"></div>
+		</div>
+		<div class="maze-47">
+			<i class="fas fa-chevron-circle-down"></i>
+		</div>
+		<div class="maze-57"></div>
+		<div class="maze-67"></div>
+		<div class="maze-77"></div>
+
+		
+</div>
+<!-- GRID MAZE FIN -->
+
+<div class="grid-projects"> 
+	<div class="grid-projects-item-1"></div>
+	<div class="grid-projects-item-2">
+		<div class="grid-projects-item-2-1">
+			<h1>GDL</h1>
+		</div>
+		<div class="grid-projects-item-2-2">
+			<h3>Web design and development (HTML,CSS,JS)</h3>
+		</div>
+		
+	</div>
+	<div class="grid-projects-item-3"></div>
+
+	
+	</div>
+
+</div>
+
+<!-- MAIN FIN -->
+
+
+
+
+
+	
+
+<!-- JAVASCRIPT  -->
+
 <script>
-        function initialize() {
-  var input = document.getElementById('searchTextField');
-  new google.maps.places.Autocomplete(input);
+	function openNav() {
+  document.getElementById("myNav").style.width = "100%";
 }
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+	function openNavP() {
+  setTimeout(function(){ document.getElementById("myNavP").style.display = "block"; }, 50);
+}
+function closeNavP() {
+  document.getElementById("myNavP").style.display = "none";
+}
+</script>
 
-google.maps.event.addDomListener(window, 'load', initialize);
+<!-- JQUERY  -->
+<script>
+/* TOGGLE OVERLAY ON/OFF */
+ 		$( ".overlay-item-1" ).click(function() {
+  		$(".overlay-content").toggleClass( "overlay-1-big" );
+  		$(".overlay-item-1").toggleClass( "overlay-wide" );
+  		$(".overlay-1").toggleClass( "overlay-1-float" );
+  		$('.overlay-1-text').toggleClass("noDisplay");
+  		$('.about').toggleClass("noDisplay");
+		});
+		$( ".overlay-item-2" ).click(function() {
+  		$(".overlay-content").toggleClass( "overlay-2-big" );
+  		$(".overlay-item-2").toggleClass( "overlay-wide" );
+  		$(".overlay-2").toggleClass( "overlay-2-float" );
+  		$('.projects').toggleClass("noDisplay");
+		});
+		$( ".overlay-item-3" ).click(function() {
+  		$(".overlay-content").toggleClass( "overlay-3-big" );
+  		$(".overlay-item-3").toggleClass( "overlay-wide" );
+  		$(".overlay-3").toggleClass( "overlay-3-float" );
+  		$(".contact").toggleClass( "noDisplay");
+		});
+/* TOGGLE RABBIT + VERTICAL/HORIZONTAL HEADLINE */
+	    $( ".grid-rabbit-item-1" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-1" );
+  		$(".rabbit-1-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-1').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-2" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-2" );
+  		$(".rabbit-2-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-2').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-3" ).click(function() {
+  		$( ".grid-rabbit").toggleClass( "rabbit-3" );
+  		$(".rabbit-3-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-3').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-4" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-4" );
+  		$(".rabbit-4-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-4').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-5" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-5" );
+  		$(".rabbit-5-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-5').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-6" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-6" );
+  		$(".rabbit-6-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-6').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-7" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-7" );
+  		$(".rabbit-7-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-7').toggleClass("text-o");
+		});
 
-        </script>
-       
-       
-
+</script>
+ 
 </body>
-
-
 </html>
