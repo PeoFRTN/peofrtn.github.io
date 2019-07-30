@@ -18,28 +18,29 @@
     <div class="container">
         <form>
            
-            <div class="row">
+           <!--<div class="row">
                 <div class="location-label">
                     <label>Origin: </label>                                    
                 </div>
                 <div class="location-input">
                     <input type="text" id="location-1" name="origin" placeholder="Enter a start location..."> 
                 </div>
-            </div>
+            </div>--> 
             
             <div class="row">
                 <div class="location-label">
-                    <label>Destination: </label>
+                    <label class="destination">Destination: </label>
                 </div>
+                
                 <div class="location-input">
-                    <input type="text" id="location-2" name="destination" placeholder="Enter a last location...">
+                    <input type="text" id="location-2" name="destination" placeholder="Enter your location...">
                 </div>
             </div>
 
             
-            <div class="row">
-                <button class="button" type="button" onclick="clearRoute();">Clear</button>
-                <button class="button" type="button" onclick="calcRoute();">Submit</button>
+            <div class="row-button">
+                <button id="clear" class="button" type="button" onclick="clearRoute();">Clear</button>
+                <button id="submit" class="button" type="button" onclick="calcRoute();">Submit</button>
             </div>      
             
                            

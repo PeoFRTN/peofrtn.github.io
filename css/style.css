@@ -47,34 +47,67 @@ body{
     background-color: #fff;
     padding: 2rem;
 }
-
+.form {
+    display: flex;
+    flex-direction: row;
+    align-content: left;
+    justify-content: center;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+}
+.row-button {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 100px 100px;
+}
+#clear {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: 0.2rem;
+}
+#submit {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    margin: 0.2rem;
+}
 .location-label{
     font-size: 1.6rem;
-    float: left;
     width: 25%;
-    margin-top: .6rem;
+    margin-top: 0.6rem;
 }
 
 .location-input{
-    float: left;
-    width: 75%;
-    margin-top: .6rem;
+    display: flex;
+
+    width: auto;
+    margin-top: 0.6rem;
+}
+.location-input > input {
+    width: 300px;
+    text-align: left;
 }
 
 .location-input::-webkit-input-placeholder {
     color:#465caa;
+    text-align: left;
 }
 
 ::-moz-placeholder {
     color: #465caa;
+    text-align: left;
 }
 
 ::-ms-placeholder {
     color:#465caa;
+    text-align: left;
 }
 
 ::placeholder {
     color:#465caa;
+    text-align: left;
 }
 
 .button{
@@ -119,7 +152,8 @@ body{
 }
 #location-1,
 #location-2 {
-    min-width: 200px;
+    min-width: 100px;
+    text-align: center;
 }
 .footer{
     position: fixed;
@@ -149,3 +183,31 @@ body{
     100% {
       opacity: 1;
       transform: translateY(0); } }
+
+
+@media only screen and (max-width: 700px) {
+    .location-input > input {
+        width: 200px;
+        text-align: center;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+    }
+    .row-button {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    #clear {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        margin: 0.2rem;
+    }
+    #submit {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin: 0.2rem;
+    }
+      }     

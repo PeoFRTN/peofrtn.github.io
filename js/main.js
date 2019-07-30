@@ -5,6 +5,8 @@ var mapOptions = {
     zoom: 10,
     mapTypeId: google.maps.MapTypeId.ROADMAP
 };
+// Here you can put the latitude and longitude of the ORIGIN address (your store)
+var storeLatLng = {lat: 45.518268, lng: -73.568832};
 
 // Hide result box
 document.getElementById("output").style.display = "none";
@@ -21,12 +23,12 @@ var directionsDisplay = new google.maps.DirectionsRenderer();
 // Bind the DirectionsRenderer to the map
 directionsDisplay.setMap(map);
 
-
+//document.getElementById("location-1").value,
 // Define calcRoute function
 function calcRoute() {
     //create request
     var request = {
-        origin: document.getElementById("location-1").value,
+        origin: storeLatLng,
         destination: document.getElementById("location-2").value,
         travelMode: google.maps.TravelMode.DRIVING,
         unitSystem: google.maps.UnitSystem.METRIC
@@ -44,6 +46,7 @@ function calcRoute() {
             var duraint = parseFloat(dura);
             //Formula for the delivery fees  
             var fees = ( ((duraint + 5)/2) + (distint) );
+            //The delivery is rounded to the nearest 2.5 using the function ceiling(created at the bottom of this sheet)
             var feesceil = ceiling(fees, 2.5);
             //Output line. to display an extra variable
             // simpy add the info in this manner(just before the </div> tag )
@@ -93,7 +96,8 @@ var autocomplete1 = new google.maps.places.Autocomplete(input1, options);
 var input2 = document.getElementById("location-2");
 var autocomplete2 = new google.maps.places.Autocomplete(input2, options);
 
-
+// To use this function, replace number by var name or the actual number you want to ceil and significance is the number you want to round up to
+// example: var RoundedNumber = ceiling(input, 1.5);   // this will take the number from input and round up to closest 1.5 and attribute it to RoundedNumber.
 function ceiling(number, significance) {
     return Math.ceil(number / significance) * significance;
   }
