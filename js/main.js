@@ -23,6 +23,14 @@ var directionsDisplay = new google.maps.DirectionsRenderer();
 // Bind the DirectionsRenderer to the map
 directionsDisplay.setMap(map);
 
+// WEEKDAYS OR WEEKENDS ?
+var today = new Date();
+if(today.getDay() == 6 || today.getDay() == 0) alert('Weekend rates') 
+else 
+    alert('Weekdays rate');
+// *TODO: ADD THE REST OF THE FUNCTION. WEEKDAYS FORMULA FOR WEEKDAYS AND WEEKEND FORMULA FOR WEEKEND
+// IF (OUTPUT WEEKDAYS FEES) ELSE (OUTPUT WEEKENDS FEES)
+
 //document.getElementById("location-1").value,
 // Define calcRoute function
 function calcRoute() {
@@ -42,10 +50,10 @@ function calcRoute() {
             var dist = result.routes[0].legs[0].distance.text;
             var dura = result.routes[0].legs[0].duration.text;
             //Variables needed (distance and duration, the function makes sure its a float(1.11) and not an integer(1)) 
-            var distint = parseFloat(dist);
-            var duraint = parseFloat(dura);
+            var distFloat = parseFloat(dist);
+            var duraFloat = parseFloat(dura);
             //Formula for the delivery fees  
-            var fees = ( ((duraint + 5)/2) + (distint) );
+            var fees = ( ((duraFloat + 5)/2) + (distFloat) );
             //The delivery is rounded to the nearest 2.5 using the function ceiling(created at the bottom of this sheet)
             var feesceil = ceiling(fees, 2.5);
             //Output line. to display an extra variable
