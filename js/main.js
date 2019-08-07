@@ -69,7 +69,7 @@ function calcRoute() {
             // OUTPUT 2 FORMULA (BASED ON HOURLY WAGE AND KM ALLOWANCE)
             var hourlyWage = 20;
             var kmAllowance = 0.50;
-            var fees2 = ((((2*duraFloat)+5)*(hourlyWage/60))+(2*distFloat*kmAllowance));
+            var fees2 = ((((1.5*duraFloat)+5)*(hourlyWage/60))+(2*distFloat*kmAllowance));
             var feesceil2 = ceiling(fees2, 1.0);
 
             // OUTPUT 3 FORMULA (BASE FEE, UBER METHOD)
@@ -79,6 +79,12 @@ function calcRoute() {
             // var KmAllowance borrowed from Output 2
             var fees3 = (pickupFee + dropoffFee)+ (kmFees);
             var feesceil3 = ceiling(fees3, 1.0);
+
+            // OUTPUT 4 FORMULA (EXPRESS)
+            var fees4 = ((((2*duraFloat)+5)*(hourlyWage/60))+(2*distFloat*kmAllowance));
+            var feesceil4 = ceiling(fees4, 1.0);
+
+           
 
             //Output line. to display an extra variable
             // simpy add the info in this manner(just before the </div> tag )
@@ -92,6 +98,11 @@ function calcRoute() {
 
             $("#output3").html("<div class='result-table'> Fees (Uber Method): " + feesceil3 + " <br> This method includes a pick up fee (2.50), a dropoff fee (3.00) and the km fee (Distance(kms) * Kms Allowance(in this case: " + kmFees +"))</div>");
             document.getElementById("output3").style.display = "block";
+
+            $("#output4").html("<div class='result-table'> Fees (Express): " + feesceil4 + " </div>");
+            document.getElementById("output3").style.display = "block";
+
+          
 
             //display route
             directionsDisplay.setDirections(result);
