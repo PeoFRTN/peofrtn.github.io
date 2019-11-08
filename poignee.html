@@ -16,7 +16,7 @@
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   	crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/styleprod.css">
 
 
 	<title>Distribution GDL</title>
@@ -26,39 +26,75 @@
 <body>
 <div class="navtop">
 	<a class="mail" href="mailto:info@distributiongdl.com"><i class=" fas fa-envelope"></i>&nbsp;&nbsp;info@distributiongdl.com</a>
-	<!--<a class="phone" href="javascript:alert('Veuillez composer le 1-800-888-0123 pour nous rejoindre Please call 1-800-888-0123 to contact us');"><i class=" fas fa-phone"></i>&nbsp;&nbsp;+1-800-888-0123</a> -->
+	
 	
 </div>
 <div class="navbar">
-	<div class="logo"><a href="#"><i class="fas fa-bookmark"></i>&nbsp;&nbsp;Distribution GDL</a></div>
-	<div class="about"><a href="#about">À PROPOS</a></div>
-	<div class="products"><a href="#produits">PRODUITS</a></div>
-	<div class="contact"><a href="contact.html">CONTACT</a></div>
-	<div id="menuicon"><a onclick="openSlideMenu()"><i class="fas fa-bars"></i></a></div>
+	<div class="logo"><a href="index.html"><i class="fas fa-bookmark"></i>&nbsp;&nbsp;Distribution GDL</a></div>
+	<div class="about"><a href="index.html">À PROPOS</a></div>
+    <div class="products"><a href="#produits">PRODUITS</a></div>
+    <div class="contact"><a href="contact.html">CONTACT</a></div>
+    <div id="menuicon"><a onclick="openSlideMenu()"><i class="fas fa-bars"></i></a></div>
 
 </div>
 <div id="side-menu" class="side-nav">
                 <a href="index.html">Distribution GDL</a>
                 <hr class="sep">
                 <a href="#produits">Produits</a>
-                <a href="#about">À Propos</a>
+                <a href="index.html">À Propos</a>
                 <a href="contact.html">Contact</a>
                 
                 <a class="btn-close" onclick="closeSlideMenu()">&times;</a>
 
 
             </div>
-
 <div class="scene-1">
 	<div class="scene-1-text">
-		<h1 id="GDL"> Distribution<br></h1><h1 > GDL </h1>
+        <img src="img/backgroundcomptoir.jpg">
+		<h1 id="GDL"> Poignées</h1>
 
 	</div>
-	<div class="button-container">
-		<a href="#produits" class="button">EN SAVOIR PLUS</a>
-		</div>
-	
 </div>
+<!-- DÉBUT GRID!-->
+<div id="rob" class="grid1">
+    <div class="pg">
+            <img class="myImg" src="poignee/poignee1.jpg" alt="" class="card-img"/>
+            <h4></h4>
+        <p>Poignée</p>
+    </div>
+    <div class="pg">
+            <img class="myImg" src="poignee/poignee2.jpg" alt="" class="card-img"/>
+            <h4></h4>
+        <p>Poignée avec code</p>
+    </div>
+    <div class="pg">
+            <img class="myImg" src="poignee/poignee3.jpg" alt="" class="card-img"/>
+            <h4></h4>
+        <p>Poignée avec verrou</p>
+    </div>
+    <div class="pg">
+            <img class="myImg" src="poignee/poignee4.jpg" alt="" class="card-img"/>
+            <h4></h4>
+        <p>Poignée factice</p>
+    </div>
+    <div class="pg">
+            <img class="myImg" src="poignee/poignee5.jpg" alt="" class="card-img"/>
+            <h4></h4>
+        <p>Poignée</p>
+    </div>
+    
+  </div>
+  <!-- FIN GRID!-->
+
+
+<!-- DÉBUT MODAL!-->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+<!-- FIN MODAL!-->
+
 <div id="produits" class="scene-2">
 	<div class="poignee"><a href="poignee.html">Poignées</a></div>
 	<div class="thermo"><a href="thermo.html">Thermostats</a></div>
@@ -73,33 +109,7 @@
 	<div class="planchervinyl"><a href="planchervinyl.html">Planchers Vinyle</a></div>
 	<div class="accessoire"><a href="accessoire.html">Accessoires</a></div>
 </div>
-<div class="scene-3">
 
-	<div class="slide-1">
-		<div class="slidein-top">
-			<h1>Services</h1>
-		</div>
-		<div class="slidein-bot">
-			<div class="bot-left"><i class="fas fa-truck-loading"></i><h5>Livraison</h5></div>
-			<div class="bot-mid"><i class="fas fa-tools"></i><h5>Installation</h5></div>
-			<div class="bot-right"><i class="fas fa-award"></i><h5>Certification</h5></div>
-
-		</div>
-		
-
-
-	</div>
-	
-	</div>
-
-</div>
-<div id="about" class="scene-4">
-	<div class="centerscene-4">
-		<h1>Qui sommes-nous?</h1><hr>
-		<h2>L'équipe Distribution GDL est maintenue par deux jeunes passionnés. À la recherche des nouvelles tendances, des meilleurs rapports qualité/prix, l'équipe Distribution GDL s'entretient avec plus d'une centaine d'entrepreneurs, de courtiers ainsi que de plusieurs divisions à travers le monde.</h2>
-
-	</div>
-</div>
 
 <div class="footer">
 	<div class="foot1">
@@ -120,9 +130,9 @@
 	</div>
 
 </div>
-
 <script>
-	$(document).ready(function() {
+
+        $(document).ready(function() {
   $('a[href^="#"]').click(function() {
       var target = $(this.hash);
       if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
@@ -132,6 +142,39 @@
   });
 });
 
+        function openSlideMenu(){
+      document.getElementById("side-menu").style.width = "100vw";
+    }
+function closeSlideMenu(){
+      document.getElementById("side-menu").style.width = "0";
+    }
+
+
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
 $(function() {
         var header = $(".navbar");
         $(window).scroll(function() {    
@@ -144,18 +187,12 @@ $(function() {
         });
   
 });
-function openSlideMenu(){
-      document.getElementById("side-menu").style.width = "100vw";
-    }
-function closeSlideMenu(){
-      document.getElementById("side-menu").style.width = "0";
-    }
 
 $(function() {
         var slide = $(".slide-1");
         $(window).scroll(function() {    
             var scroll = $(window).scrollTop();
-            if (scroll >= 750) {
+            if (scroll >= 200) {
                 slide.addClass("show");
             } else {
                 slide.removeClass("show");
@@ -164,17 +201,12 @@ $(function() {
   
 });
 </script>
-
 <script>
-		$( ".products" ).click(function() {
-  		$(".subprod").toggleClass( "gridshow" );
-  		
-		});
-		$( "#menuicon" ).click(function() {
-  		$(".subprod").toggleClass( "gridshow" );
-  		
-		});
-	</script>
+        $( ".products" ).click(function() {
+        $(".subprod").toggleClass( "gridshow" );
+        
+        });
+    </script>
 </body>
 
 

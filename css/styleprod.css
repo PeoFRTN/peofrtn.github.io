@@ -85,7 +85,7 @@
 
 .logo {
 	grid-column: 1 / 2;
-
+	min-width: 175px;
 	text-align: center;
 }
 .logo a {
@@ -355,18 +355,19 @@
 
 .scene-2 {
 	background-color: #F7F7F7;
-	height: 50vh;
+	height: 60vh;
 	width: 100%;
 	display: grid;
 	grid-template-columns: 10px 1fr 1fr 1fr 10px;
-	grid-template-rows: 10px 1fr 1fr 1fr 10px;
+	grid-template-rows: 10px 1fr 1fr 1fr 1fr 10px;
 	grid-column-gap: 10px;
 	grid-row-gap: 10px;
 }
-.comptoir {
+.poignee {
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
-	background-image: url("../img/comptoir.jpg");
+	background-image: url("../img/poignee.jpg");
+	background-size: 100%;
 	background-position: center;
 	text-align: center;
 	display: flex;
@@ -387,10 +388,10 @@
 	align-items: center;
 	justify-content: center;
 }
-.ceramique {
+.douche {
 	grid-column: 4 / 5;
 	grid-row: 2 / 3;
-	background-image: url("../img/ceramique.jpg");
+	background-image: url("../img/douche.jpg");
 	background-size: cover;
 	background-position: center bottom;
 	display: flex;
@@ -446,7 +447,7 @@
 	align-items: center;
 	justify-content: center;
 }
-.plancher {
+.plancherchauffant {
 	grid-column: 3 / 4;
 	grid-row: 4 / 5;
 	background-image: url("../img/plancher.jpg");
@@ -469,39 +470,79 @@
 	align-items: center;
 	justify-content: center;
 }
-.comptoir a,
+.toilet {
+	grid-column: 2 / 3;
+	grid-row: 5 / 6;
+	background-image: url("../img/toilet.jpg");
+	background-position: center center;
+	background-size: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+.planchervinyl {
+	grid-column: 3 / 4;
+	grid-row: 5 / 6;
+	background-image: url("../img/planchervinyl.jpg");
+	background-position: center center;
+	background-size: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.accessoire {
+	grid-column: 4 / 5;
+	grid-row: 5 / 6;
+	background-image: url("../img/accessoire.jpg");
+	background-position: center center;
+	background-size: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.poignee a,
 .thermo a,
-.ceramique a,
+.douche a,
 .lum a,
 .bain a,
 .evier a,
 .rob a,
-.plancher a,
-.lavabo a {
+.plancherchauffant a,
+.lavabo a,
+.planchervinyl a,
+.toilet a,
+.accessoire a {
 	font-family: 'Open Sans Condensed', sans-serif;
 	background-color: #3fa9ff;	
 	text-decoration: none;
 	list-style: none;
-	font-size: 3.5vh;
+	font-size: 3.2vh;
 	font-weight: bolder;
 	vertical-align: middle;
 	margin: 0 2px 0 2px;
 	color: white;
 	padding: 0 10px 0 10px;
-		-webkit-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 	box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 }
-.comptoir a:hover,
-.ceramique a:hover,
+.poignee a:hover,
+.douche a:hover,
 .lum a:hover,
 .thermo a:hover,
 .bain a:hover,
 .evier a:hover,
 .rob a:hover,
-.plancher a:hover,
-.lavabo a:hover {
-	font-size: 3.8vh;
+.plancherchauffant a:hover,
+.lavabo a:hover,
+.planchervinyl a:hover,
+.toilet a:hover,
+.accessoire a:hover {
+	
 	transition: 0.5s;
 
 }
@@ -551,10 +592,24 @@
 	background-color: #212121;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 400px;
+	grid-template-rows: 300px;
 	padding: 0 15px 0 15px;
 }
-
+.foot1 {
+	display: grid;
+	padding: 50px 20px 20px 50px;
+	grid-template-columns:  1fr;
+	grid-template-rows: 1fr 1fr;
+	border-right: 2px solid white;
+}
+.foot1-top,
+.foot1-bot,
+.foot2 div {
+	color: #F7F7F7;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 .footer h5 {
 	padding: 0 0 0 10px;
 	font-size: 18px;
@@ -564,11 +619,12 @@
 }
 
 .foot2 {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: space-around;
+	display: grid;
+	padding: 50px 20px 20px 50px;
+	grid-template-columns:  1fr;
+	grid-template-rows: 1fr 1fr;
 }
+
 .foot2 i {
 	color: #F7F7F7;
 	font-size: 36px;
@@ -636,20 +692,19 @@
 	background-color: #212121;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 400px;
+	grid-template-rows: 300px;
 	padding: 0 15px 0 15px;
 }
 .foot1 {
 	display: grid;
 	padding: 50px 20px 20px 50px;
 	grid-template-columns:  1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	border-right: 2px solid white;
-
 }
 .foot1-top,
-.foot1-mid,
-.foot1-bot {
+.foot1-bot,
+.foot2 div {
 	color: #F7F7F7;
 	display: flex;
 	align-items: center;
@@ -661,6 +716,27 @@
 }
 .footer i {
 	font-size: 42px;
+}
+
+.foot2 {
+	display: grid;
+	padding: 50px 20px 20px 50px;
+	grid-template-columns:  1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.foot2 i {
+	color: #F7F7F7;
+	font-size: 36px;
+	padding: 2px 2px 2px 15px;
+}
+.foot2 h1 {
+	padding: 25px 15px 15px 20px;
+	color: #F7F7F7;
+	font-size: 16px;
+}
+.footer i:hover {
+	color: #3fa9ff;
 }
 
 @media only screen and (max-width: 750px)  {
