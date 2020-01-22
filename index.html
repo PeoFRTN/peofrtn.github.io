@@ -1,181 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Pour créer il faut imaginer. Pour imaginer il faut être humain. -->
+<!-- Pour créer il faut imaginer et Pour imaginer il faut être humain. -->
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  	crossorigin="anonymous"></script>
-
-	<link rel="stylesheet" href="css/style.css">
-
-
-	<title>Distribution GDL</title>
+	  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>F O R T I N - web developer</title>
 
 </head>
-
 <body>
-<div class="navtop">
-	<a class="mail" href="mailto:info@distributiongdl.com"><i class=" fas fa-envelope"></i>&nbsp;&nbsp;info@distributiongdl.com</a>
-	<!--<a class="phone" href="javascript:alert('Veuillez composer le 1-800-888-0123 pour nous rejoindre Please call 1-800-888-0123 to contact us');"><i class=" fas fa-phone"></i>&nbsp;&nbsp;+1-800-888-0123</a> -->
-	
-</div>
-<div class="navbar">
-	<div class="logo"><a href="#"><i class="fas fa-bookmark"></i>&nbsp;&nbsp;Distribution GDL</a></div>
-	<div class="about"><a href="#about">À PROPOS</a></div>
-	<div class="products"><a href="#produits">PRODUITS</a></div>
-	<div class="contact"><a href="contact.html">CONTACT</a></div>
-	<div id="menuicon"><a onclick="openSlideMenu()"><i class="fas fa-bars"></i></a></div>
+<!-- OVERLAY NAV -->
+<div id="myNav" class="overlay">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-angle-double-left"></i></a>
 
-</div>
-<div id="side-menu" class="side-nav">
-                <a href="index.html">Distribution GDL</a>
-                <hr class="sep">
-                <a href="#produits">Produits</a>
-                <a href="#about">À Propos</a>
-                <a href="contact.html">Contact</a>
-                
-                <a class="btn-close" onclick="closeSlideMenu()">&times;</a>
+<!-- OVERLAY CONTENT -->
+ <div class="overlay-content">
 
-
-            </div>
-
-<div class="scene-1">
-	<div class="scene-1-text">
-		<h1 id="GDL"> Distribution<br></h1><h1 > GDL </h1>
-
+<!-- OVERLAY ITEM 1 -->
+    <div class="overlay-item-1"><a class="overlay-1" href="#"><i class="fas fa-male"></i>&nbsp;&nbsp;&nbsp;ABOUT</a>
+			<div class="about"><h2> My name is Pierre-Olivier and I am self-taught web developer and a soon to be chemist.<br>
+									I live in Montreal, Canada and I love to code!
+								</h2>
+			</div>
 	</div>
-	<div class="button-container">
-		<a href="#produits" class="button">EN SAVOIR PLUS</a>
+<!-- OVERLAY ITEM 2 -->
+    <div class="overlay-item-2"><a class="overlay-2" href="#""><i class="fas fa-book"></i>&nbsp;&nbsp;&nbsp;PROJECTS</a>
+			<div class="projects"><h2>DISTRIBUTION GDL [development/design]</h2><a href="https://www.distributiongdl.com"><i class="fas fa-location-arrow"></i></a>
+								  
+			</div>
+    </div>
+
+
+<!-- OVERLAY ITEM 3 -->
+    <div class="overlay-item-3"><a class="overlay-3" href="#"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;CONTACT</a>
+			<div class="contact"><h2>You &nbsp; can &nbsp; reach &nbsp; me &nbsp;here&nbsp;&nbsp;&nbsp;
+									<i class="fas fa-hand-point-down"><a href="mailto:peofortin@gmail.com"><i class="fas fa-inbox"></i></a></i> 
+									
+								</h2>
+			</div>
+    </div>
+
+  </div>
+<!-- OVERLAY CONTENT FIN -->
+
+</div>
+<!-- OVERLAY NAV FIN -->
+
+<!-- OVERLAY P -->
+<div id="myNavP" class="overlayP">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNavP()"><i class="fas fa-times-circle"></i></a>
+  <div class="overlay-contentP">  
+    <div class="overlay-item-p"><a class="lock" href="#""><i class="fas fa-rocket"></i></a></div>   
+  </div>
+</div>
+
+
+<!-- NAV BAR -->
+<div class="nav">
+	<!-- NAV LEFT !-->
+		<div class="menu">
+			<a onclick="openNav()" href="#"><i class="fas fa-angle-double-right"></i></a>
 		</div>
-	
-</div>
-<div id="produits" class="scene-2">
-	<div class="poignee"><a href="poignee.html">Poignées</a></div>
-	<div class="thermo"><a href="thermo.html">Thermostats</a></div>
-	<div class="douche"><a href="douche.html">Douches</a></div>
-	<div class="lum"><a href="luminaire.html">Luminaires</a></div>
-	<div class="bain"><a href="bain.html">Bains</a></div>
-	<div class="evier"><a href="evier.html">Éviers</a></div>
-	<div class="rob"><a href="rob.html">Robinetterie</a></div>
-	<div class="plancherchauffant"><a href="plancher.html">Planchers Chauffant</a></div>
-	<div class="lavabo"><a href="lavabo.html">Lavabos</a></div>
-	<div class="toilet"><a href="toilet.html">Toilettes</a></div>
-	<div class="planchervinyl"><a href="planchervinyl.html">Planchers Vinyle</a></div>
-	<div class="accessoire"><a href="accessoire.html">Accessoires</a></div>
-</div>
-<div class="scene-3">
-
-	<div class="slide-1">
-		<div class="slidein-top">
-			<h1>Services</h1>
-		</div>
-		<div class="slidein-bot">
-			<div class="bot-left"><i class="fas fa-truck-loading"></i><h5>Livraison</h5></div>
-			<div class="bot-mid"><i class="fas fa-tools"></i><h5>Installation</h5></div>
-			<div class="bot-right"><i class="fas fa-award"></i><h5>Certification</h5></div>
-
-		</div>
-		
-
-
-	</div>
-	
-	</div>
-
-</div>
-<div id="about" class="scene-4">
-	<div class="centerscene-4">
-		<h1>Qui sommes-nous?</h1><hr>
-		<h2>L'équipe Distribution GDL est maintenue par deux jeunes passionnés. À la recherche des nouvelles tendances, des meilleurs rapports qualité/prix, l'équipe Distribution GDL s'entretient avec plus d'une centaine d'entrepreneurs, de courtiers ainsi que de plusieurs divisions à travers le monde.</h2>
-
-	</div>
+	<!-- NAV RIGHT -->
+		<ul>
+			<li class="dropdown">
+				<a onclick="openNavP()" class="navlink" href="#" ><i class="fab fa-product-hunt"></i></a>
+			</li>
+			<li class="dropdown-2">
+				<a class="navlink" href="#" ><i class="fas fa-language"></i></a>
+			</li>
+		</ul>
 </div>
 
-<div class="footer">
-	<div class="foot1">
-		<div class="foot1-top">
-			<i class="fas fa-map-marker-alt"></i><h5>Candiac, Qc, Canada</h5>
-		</div>
-		
-		<div class="foot1-bot">
-			<i class="fas fa-envelope"></i><h5>info@distributiongdl.com</h5>
-		</div>
-	</div>
-	<div class="foot2">
-		<div><h1>Distribution GDL est une entreprise québécoise fondée en 2016.</h1></div>
-		
-		<div><h1>Tous droits réservés 2019 ©  - <a href="peofrtn.github.io">FRTN</a></h1></div>
-		
 
-	</div>
+<!-- MAIN -->
+<div class="main">
 
+<!-- GRID RABBIT -->
+<div id="rabbit" class="grid-rabbit">
+
+	<div class="grid-rabbit-item-1">
+		<a href="#" <i class="fas fa-graduation-cap"></i></a>
+		<p class="text-rabbit-1"> EDUCATION </p>
+
+			<div class="rabbit-1-text">
+
+				<i class="fas fa-flask"></i>
+				<h1> B.S.  Chemistry </h1>
+				<h3> Université de Montréal <br> 2019</h3>
+				
+			</div>
+	</div>
+	<div class="grid-rabbit-item-2">
+		<a href="#" <i class="fas fa-tv"></i></a>
+		<p class="text-rabbit-2"> WEB </p>
+
+			<div class="rabbit-2-text">
+				<i class="fab fa-github"></i>
+				<h1> Github </h1>
+				<h3>peofrtn.github.io</h3>
+				</div>
+	</div>
+	<div class="grid-rabbit-item-3">
+		<a href="#"  <i class="fas fa-envelope"></i></a>
+		<p class="text-rabbit-3"> MAIL </p>
+
+			<div class="rabbit-3-text">
+				<i class="fas fa-at"></i>
+				<h1> Email </h1>
+				<h3>peofortin@gmail.com</h3>
+			</div>
+	</div>
+	<div class="grid-rabbit-item-4 animated shake">
+		<a href="#" <i class="fas fa-code"></i></a>
+		<p class="text-rabbit-4"> CODE </p>
+
+			<div class="rabbit-4-text">	
+				<i class="fab fa-html5"></i>
+				<h1> HTML</h1>
+				
+
+				<i class="fab fa-css3-alt"></i>
+				<h1> CSS</h1>
+				
+
+				<i class="fab fa-js"></i>
+				<h1> Javascript</h1>
+				
+
+
+				
+			</div>
+	</div>
+	<div class="grid-rabbit-item-5">
+		<a href="#" <i class="fas fa-guitar"></i></a>
+		<p class="text-rabbit-5"> MUSIC </p>
+			<div class="rabbit-5-text">
+				
+
+				<i class="fas fa-music"></i>
+				<h1>Musician</h1>
+				<h3>Guitar, Composer</h3>
+			</div>
+	</div>
+	<div class="grid-rabbit-item-6">
+		<a href="#" <i class="fas fa-briefcase"></i></a>
+		<p class="text-rabbit-6"> WORK </p>
+
+			<div class="rabbit-6-text">
+				<i class="fas fa-user-tie"></i>
+				<h1> IKEA </h1>
+				<h3> Collaborator </h3>
+				<h5> 2010 - 2014 </h5>
+			</div>
+	</div>
+	<div class="grid-rabbit-item-7">
+		<a href="#" <i class="fas fa-flask"></i></a>
+		<p class="text-rabbit-7"> CHEMISTRY </p>
+
+			<div class="rabbit-7-text">
+				<i class="fas fa-file"></i>
+				<h1> Undergrad studies</h1>
+				<h3> Interest: Computationnal Chemistry</h3>
+			</div>
+	</div>
 </div>
+<!-- GRID RABBIT FIN -->
+
+
+
+<!-- MAIN FIN -->
+
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>	
+
+<!-- JAVASCRIPT  -->
 
 <script>
-	$(document).ready(function() {
-  $('a[href^="#"]').click(function() {
-      var target = $(this.hash);
-      if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
-      if (target.length == 0) target = $('html');
-      $('html, body').animate({ scrollTop: target.offset().top-50 }, 1000);
-      return false;
-  });
-});
-
-$(function() {
-        var header = $(".navbar");
-        $(window).scroll(function() {    
-            var scroll = $(window).scrollTop();
-            if (scroll >= 120) {
-                header.addClass("scrolled");
-            } else {
-                header.removeClass("scrolled");
-            };
-        });
-  
-});
-function openSlideMenu(){
-      document.getElementById("side-menu").style.width = "100vw";
-    }
-function closeSlideMenu(){
-      document.getElementById("side-menu").style.width = "0";
-    }
-
-$(function() {
-        var slide = $(".slide-1");
-        $(window).scroll(function() {    
-            var scroll = $(window).scrollTop();
-            if (scroll >= 750) {
-                slide.addClass("show");
-            } else {
-                slide.removeClass("show");
-            };
-        });
-  
-});
+	function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+	function openNavP() {
+  setTimeout(function(){ document.getElementById("myNavP").style.display = "block"; }, 50);
+}
+function closeNavP() {
+  document.getElementById("myNavP").style.display = "none";
+}
 </script>
 
+<!-- JQUERY  -->
+
 <script>
-		$( ".products" ).click(function() {
-  		$(".subprod").toggleClass( "gridshow" );
-  		
+/* TOGGLE OVERLAY ON/OFF */
+ 		$( ".overlay-item-1" ).click(function() {
+  		$(".overlay-content").toggleClass( "overlay-1-big" );
+  		$(".overlay-item-1").toggleClass( "overlay-wide" );
+  		$(".overlay-1").toggleClass( "overlay-1-float" );
+  		$('.overlay-1-text').toggleClass("noDisplay");
+  		$('.about').toggleClass("noDisplay");
 		});
-		$( "#menuicon" ).click(function() {
-  		$(".subprod").toggleClass( "gridshow" );
-  		
+		$( ".overlay-item-2" ).click(function() {
+  		$(".overlay-content").toggleClass( "overlay-2-big" );
+  		$(".overlay-item-2").toggleClass( "overlay-wide" );
+  		$(".overlay-2").toggleClass( "overlay-2-float" );
+  		$('.projects').toggleClass("noDisplay");
 		});
-	</script>
+		$( ".overlay-item-3" ).click(function() {
+  		$(".overlay-content").toggleClass( "overlay-3-big" );
+  		$(".overlay-item-3").toggleClass( "overlay-wide" );
+  		$(".overlay-3").toggleClass( "overlay-3-float" );
+  		$(".contact").toggleClass( "noDisplay");
+		});
+/* TOGGLE RABBIT + VERTICAL/HORIZONTAL HEADLINE */
+	    $( ".grid-rabbit-item-1" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-1" );
+  		$(".rabbit-1-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-1').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-2" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-2" );
+  		$(".rabbit-2-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-2').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-3" ).click(function() {
+  		$( ".grid-rabbit").toggleClass( "rabbit-3" );
+  		$(".rabbit-3-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-3').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-4" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-4" );
+  		$(".rabbit-4-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-4').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-5" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-5" );
+  		$(".rabbit-5-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-5').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-6" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-6" );
+  		$(".rabbit-6-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-6').toggleClass("text-o");
+		});
+		$( ".grid-rabbit-item-7" ).click(function() {
+  		$( ".grid-rabbit" ).toggleClass( "rabbit-7" );
+  		$(".rabbit-7-text").toggleClass( "noDisplay" );
+  		$('.text-rabbit-7').toggleClass("text-o");
+		});
+
+</script>
+ 
 </body>
-
-
 </html>
